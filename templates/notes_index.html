@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}notes | Aaron Moradi{% endblock title %}
+{% block head %}
+<link rel="stylesheet" href="/notes.css" />
+<script type="text/javascript" src="/elasticlunr.min.js"></script>
+<script type="text/javascript" src="/search_index.en.js"></script>
+<script type="text/javascript" src="/search.js"></script>
+{% endblock head %}
+
+{% block header_body %}
+<input type="text" id="search" placeholder="search..."/>
+{% endblock header_body %}
+
+{% block header_links %}
+  <a href="/notes" title="notes">notes</a>  
+  <a href="/" title="me">me</a>
+{% endblock header_links %}
+    
+{% block content %}
+<div class="search-results">
+
+</div>
+<div class="search-results__items notes-list">
+
+</div>
+
+  {{ section.content | safe }}
+  <ul class="notes-list">
+    {% for page in section.pages %}
+    <li><a class="notes-teaser-link border-0" href="{{ page.permalink | safe }}"><span class="notes-teaser-title">{{ page.title }}</span><p class="notes-teaser-desc">{{ page.description | safe }}</p><p class="notes-teaser-reading-time">{{ page.reading_time }} min read</p></a></li>
+    {% endfor %}
+  </ul>
+{% endblock content %}

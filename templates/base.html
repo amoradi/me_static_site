@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    
+    <title>{% block title %}{% endblock title %}</title>
+
+    {% block head %}{% endblock head %}
+</head>
+<body class="all">
+    <div class="important-content">
+        <!-- make this sticky/fixed -->
+        <header class="header">
+            <div class="header-body">
+                <!-- 
+                    header content here. 
+                    Either nothing, or the notes filter/list component.
+                    Possible to condition the div with body presence.
+                -->
+                {% block header_body %}{% endblock header_body %}
+            </div>
+            <nav class="header-links">
+                <!--
+                    <a href="/notes" title="notes">notes</a>
+                    <a href="/" title="Aaron Moradi">me</a>
+                -->
+                {% block header_links %}{% endblock header_links %}
+            </nav>
+        </header>
+        {% block content %}{% endblock content %}
+    </div>
+    <footer class="footer">
+        {% block footer %}
+        <i>Never have the world's moneys been so long cut off from their metallic roots.</i>
+        {% endblock footer %}
+    </footer>
+</body>
+</html>

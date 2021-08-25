@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Aaron Moradi{% endblock title %}
+{% block head %}
+  <link rel="stylesheet" href="/notes.css" />
+{% endblock head %}
+
+{% block header_links %}
+    <a href="/notes" title="notes">notes</a>  
+    <a href="/" title="me">me</a>
+{% endblock header_links %}
+    
+{% block content %}
+    <div class="reading-text">
+        <h1>{{ page.title | safe }}</h1>
+        {{ page.content | safe }}
+    </div>
+{% endblock content %}
