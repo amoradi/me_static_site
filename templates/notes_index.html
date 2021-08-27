@@ -25,7 +25,7 @@
 </div>
 
   {{ section.content | safe }}
-  <ul class="notes-list">
+  <ul class="notes-list notes-list-proper">
     {% for page in section.pages %}
     <li><a class="notes-teaser-link border-0" href="{{ page.permalink | safe }}"><span class="notes-teaser-title">{{ page.title }}</span><p class="notes-teaser-desc">{{ page.description | safe }}</p><p class="notes-teaser-reading-time">{{ page.reading_time }} min read</p></a></li>
     {% endfor %}

@@ -77,7 +77,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     border: 0;
-    font-size: var(--heading-size);
+    font-size: var(--text-size);
     font-weight: 700;
     color: var(--dark);
     letter-spacing: 0.5px;
@@ -123,4 +123,12 @@
 #search:focus {
     outline: 0;
     border-bottom: 1px solid var(--light);
+}
+
+.searching .notes-list-proper {
+    display: none;
+}
+
+.notes-list-proper {
+    display: block;
 }

@@ -122,11 +122,11 @@ function debounce(func, wait) {
   }
   
   function formatSearchResultItem(item, terms) {
-    return '<div class="search-results__item">'
-    + `<a href="${item.ref}">${item.doc.title}</a>`
-    + `<div>${item.doc.description}</div>`
-    //+ `<div>${makeTeaser(item.doc.body, terms)}</div>`
-    + '</div>';
+    return `<a href="${item.ref}" class="search-results__item notes-teaser-link border-0">`
+    + `<span class="notes-teaser-title">${item.doc.title}</span>`
+    + `<p class="notes-teaser-desc">${item.doc.description}</p>`
+    //+ `<div>${makeTeaser(item.doc.body, terms)}</div>` class="notes-teaser-reading-time"
+    + '</a>';
   }
   
   function initSearch() {
@@ -147,6 +147,12 @@ function debounce(func, wait) {
   
     $searchInput.addEventListener("keyup", debounce(function() {
       var term = $searchInput.value.trim();
+
+      if (term) {
+        document.getElementsByTagName('body')[0].setAttribute('class', 'all searching');
+      } else {
+        document.getElementsByTagName('body')[0].setAttribute('class', 'all');
+      }
 
       if (term === lastTerm || !index) {
         return;
