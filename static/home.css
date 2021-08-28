@@ -1,11 +1,11 @@
 /* homepage CSS */
 .home .masthead {
-    padding: 0 0 60px;
+    padding: 20px 0 60px;
 }
 
 @media only screen and (min-width: 900px) {
     .home .masthead {
-        padding-top: 120px;
+        padding-top: 20px;
     }
 }
 
@@ -28,7 +28,7 @@
 .home .content {
     border-top: 1px solid var(--light-ultra);
     margin-top: 40px;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 @media only screen and (min-width: 900px) {
@@ -43,4 +43,8 @@
 .home .column div {
     padding: 0;
     margin-bottom: 40px;
+}
+
+.home .column p {
+    margin: 12px 0;
 }
