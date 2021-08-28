@@ -112,6 +112,7 @@
     border-bottom: 1px solid var(--light-extra);
     color: var(--med-light);
     box-sizing: content-box;
+    max-width: 100%;
 }
 
 #search::placeholder {
@@ -130,4 +131,9 @@
 
 .notes-list-proper {
     display: block;
+}
+
+
+.header-body {
+    max-width: 50%;
 }
