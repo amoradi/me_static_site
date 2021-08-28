@@ -76,7 +76,7 @@ a:hover {
     font-size: var(--text-meta-size);
 }
 
-.header-links a {
+nav.header-links a {
     margin: 0 0 0 20px;
 }
 
