@@ -48,14 +48,12 @@
         <p>FS Champ DFS Lineup Optimizer</p>
         <p><a href="https://www.npmjs.com/package/scintilla" target="_blank">Scintilla, React Sparklines</a></p>
       </div>
-      <h2>Favorite Crypto</h2>
+      <h2>Crypto</h2>
       <div>
-        <p><a href="https://www.getmonero.org/" target="_blank">Monero</a></p>
+      <p><a href="https://ethereum.org/en/" target="_blank">Ethereum</a></p>
         <p><a href="https://www.vechain.org/" target="_blank">VeChain</a></p>
-        <p><a href="https://www.kava.io/" target="_blank">Kava</a></p>
-        <p><a href="https://solana.com/" target="_blank">Solana</a></p>
         <p><a href="https://www.ceek.com/" target="_blank">CEEK</a></p>
-        <p><a href="https://www.powerledger.io/" target="_blank">Power Ledger</a></p>
+        <p><a href="https://smartkeyplatform.io/" target="_blank">Smart Key</a></p>
       </div>
     </div>
   </section>
