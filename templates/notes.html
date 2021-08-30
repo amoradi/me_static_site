@@ -1,5 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Aaron Moradi{% endblock title %}
+{% block title %}{{ page.title | safe }} | Aaron Moradi{% endblock title %}
+{% block desc %}{{ page.description | safe }}{% endblock desc %}
 {% block head %}
   <link rel="stylesheet" href="/notes.css" />
 {% endblock head %}
