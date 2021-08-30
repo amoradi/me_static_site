@@ -5,11 +5,10 @@ template = "notes.html"
 description = "The Intelligent Investor, Chapter 8..."
 +++
 
-## Ch. 8: The Investor and Market Flucuations
-
 > Let us repeat what we said at the outset: If you want to **speculate** do so with your eyes open, knowing that **you will probably lose money** in the end; be sure to limit the amount at risk and to separate it completely from your investment program.
 
-### Profiting from Price Swings
+Profiting from Price Swings
+
 - via **timing**
     - endeavor to **anticipate the action** of the **stock market**: to buy or hold when future course is deemed to be upward, and to sell or refrain from buying when the course is downward.
 - via **pricing**
