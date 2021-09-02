@@ -39,6 +39,6 @@ A true investment must have a true margin of safety. And a true margin of safety
 
 > Investment is **most intelligent when** it is most **businesslike**. It is amazing to see how many capable businessmen try to operate in Wall Street with complete disregard of all the sound principles through which they have gained success in their own undertakings.
 
-> A third business principle: "Do not enter upon an operation—that is, manufacturing or trading in an item—unlesss a reliable calculation shows that is has a fair chance to yield a reasonable profit...**operations for profit should be based not on optimism but on arithmetic**."
+> A third business principle: "Do not enter upon an operation—that is, manufacturing or trading in an item—unless a reliable calculation shows that is has a fair chance to yield a reasonable profit...**operations for profit should be based not on optimism but on arithmetic**."
 
 > A fourth business rule is more positive: "Have the courage of your knowledge and experiencee. If you have formed a conclusion from the fact and if you know your judgment is sound, act on it—even though others may hesitate or differ." (You are neither right nor wrong because the crowd disagrees with you. You are right because your data and reasoning are right.) Similarly, in the world of securities, courage becomes the supreme virtue _after_ adequate knowledge and a tested judgment are at hand.
