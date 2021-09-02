@@ -3,7 +3,10 @@
 title = "The Investor and Market Fluctuations"
 template = "notes.html"
 description = "The Intelligent Investor, Chapter 8..."
+
 +++
+
+<h2 class="subtitle">Chapter 8 in <a href="https://www.amazon.com/Intelligent-Investor-Definitive-Investing-Essentials/dp/0060555661" target="_blank">The Intelligent Investor</a></h2>
 
 > Let us repeat what we said at the outset: If you want to **speculate** do so with your eyes open, knowing that **you will probably lose money** in the end; be sure to limit the amount at risk and to separate it completely from your investment program.
 

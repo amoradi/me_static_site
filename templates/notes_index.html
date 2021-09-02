@@ -27,8 +27,15 @@
 
   {{ section.content | safe }}
   <ul class="notes-list notes-list-proper">
-    {% for page in section.pages %}
+    {% for page in paginator.pages %}
     <li><a class="notes-teaser-link border-0" href="{{ page.path | safe }}"><span class="notes-teaser-title">{{ page.title }}</span><p class="notes-teaser-desc">{{ page.description | safe }}</p><p class="notes-teaser-reading-time">{{ page.reading_time }} min read</p></a></li>
     {% endfor %}
   </ul>
+
+{% if paginator.previous %}
+    <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+{% endif %}
+{% if paginator.next %}
+    <a class="next" href="{{ paginator.next }}">Next ›</a>
+{% endif %}
 {% endblock content %}

@@ -12,7 +12,8 @@
     
 {% block content %}
     <div class="reading-text">
-        <h1>{{ page.title | safe }}</h1>
+        <h1 class="title">{{ page.title | safe }}</h1>
+
         {{ page.content | safe }}
     </div>
 {% endblock content %}

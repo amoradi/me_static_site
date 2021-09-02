@@ -3,7 +3,9 @@
 title = "\"Margin of Safety\" as the Central Concept of Investment"
 template = "notes.html"
 description = "The Intelligent Investor, Chapter 20..."
+
 +++
+<h2 class="subtitle">Chapter 20 in <a href="https://www.amazon.com/Intelligent-Investor-Definitive-Investing-Essentials/dp/0060555661" target="_blank">The Intelligent Investor</a></h2>
 
 Confronted to distill the secret of sound investing into three words, we venture the motto, **MARGIN OF SAFETY.**
 
