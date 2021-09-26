@@ -10,7 +10,7 @@
 ## Publish to Gihub Pages
 
 ```bash
-bash publish_www.sh
+$ bash publish_www.sh
 ```
 
 ## Fleek.co
