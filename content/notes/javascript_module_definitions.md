@@ -1,8 +1,8 @@
 +++
 
-title = "JavaScript Modue Definitions: CJS, AMD, UMD, and ESM"
+title = "JavaScript Module Definitions: CJS, AMD, UMD, and ESM"
 template = "notes.html"
-description = "Quick points on module definitions."
+description = "Quick Points on Module Definitions"
 
 +++
 
@@ -79,4 +79,4 @@ define(['dep1', 'dep2'], function (dep1, dep2) {
 - CJS is synchronous and good for back end.
 - AMD is asynchronous and good for front end.
 
-reference: https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm
+[material copied from here](https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm)
