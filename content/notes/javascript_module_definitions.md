@@ -79,4 +79,5 @@ define(['dep1', 'dep2'], function (dep1, dep2) {
 - CJS is synchronous and good for back end.
 - AMD is asynchronous and good for front end.
 
-[material copied from here](https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm)
+Material copied from: [https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm](https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm)
+
