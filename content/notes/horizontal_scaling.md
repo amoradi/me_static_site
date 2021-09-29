@@ -36,5 +36,7 @@ Advantages of Horizontal Scaling:
 - Bigger footprint and impact on the data center
 - Extra networking equipment such as routers and switches are required
 
+Video Comparison
+https://www.youtube.com/watch?v=xpDnVSmNFX0
 
 Copied from: [https://www.redswitches.com/blog/difference-between-horizontal-vertical-scaling](https://www.redswitches.com/blog/difference-between-horizontal-vertical-scaling)

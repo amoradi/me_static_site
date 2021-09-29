@@ -36,4 +36,7 @@ Advantages of Vertical Scaling:
 - Severe vendor lock-in.
 - The cost of implementing is expensive.
 
+Video Comparison
+https://www.youtube.com/watch?v=xpDnVSmNFX0
+
 Copied from: [https://www.redswitches.com/blog/difference-between-horizontal-vertical-scaling](https://www.redswitches.com/blog/difference-between-horizontal-vertical-scaling)
