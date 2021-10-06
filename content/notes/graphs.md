@@ -3,7 +3,7 @@
 title = ""
 template = "notes.html"
 description = ""
-draft: true
+draft = true
 
 +++
 
