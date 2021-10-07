@@ -49,7 +49,7 @@ Engineers have been building programming languages since the Dark Ages of comput
 
 Though the area explored by language designers is vast, the trails they’ve carved through it are few. Not every language takes the exact same path—some take a shortcut or two—but otherwise they are reassuringly similar.
 
-**Steps**
+Steps:
 - Scanning
 - Tokens
 - Parsing
