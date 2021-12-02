@@ -15,7 +15,7 @@ Mathematicians have named five families of numbers over the centuries. Four are 
 | rational | Q (quotient)| `n/d` for any integers `n` and `d` not 0 | Measuring size or change in size / comparing size | Includes all integers. Can also be representated in decimals and percentages.
 | real | R | decimals | Measuring size or change in size, including any possible length, locating on the number line | Some numbers are represented by a symbol or letter. Real numbers that aren't rational are called irrational (never ending decimals [hence written as symbols]). Famous ones include: &radic;2 and &#960; |
 
-Note: Symbols are noramlly styled in font blackboard bold by mathematicians.
+Note: Symbols are normally styled in font blackboard bold by mathematicians.
 
 The letter symbols in this table are used to make statements about what families each number are a part of purely in mathematical notation. The symbol that is used to say whether a number is in a family is &isin;.
 
