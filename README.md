@@ -7,6 +7,15 @@
   - connect page (dlink?)(list my links)(dead page)(used when other sites call for it or for when very very brief intro is needed)
   - real resume, pdf?
 
+## Local Dev
+https://www.getzola.org/documentation/getting-started/cli-usage/
+```bash
+# Build
+$ zola build
+# Build and serve sitee locally.
+$ zola serve
+```
+
 ## Publish to Gihub Pages
 
 ```bash

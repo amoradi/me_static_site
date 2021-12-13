@@ -18,18 +18,14 @@
         <!-- make this sticky/fixed -->
         <header class="header">
             <div class="header-body">
-                <!-- 
-                    header content here. 
-                    Either nothing, or the notes filter/list component.
-                    Possible to condition the div with body presence.
-                -->
-                {% block header_body %}{% endblock header_body %}
+                <a href="/" title="Aaron Bijan Moradi">Aaron Bijan Moradi</a>  
             </div>
             <nav class="header-links">
                 <!--
                     <a href="/notes" title="notes">notes</a>
                     <a href="/" title="Aaron Moradi">me</a>
                 -->
+                {% block header_body %}{% endblock header_body %}
                 {% block header_links %}{% endblock header_links %}
             </nav>
         </header>
