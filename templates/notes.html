@@ -11,8 +11,9 @@
     
 {% block content %}
     <div class="reading-text">
+        <a class="back-link"href="/notes"/>&#8592; back</a>
         <h1 class="title">{{ page.title | safe }}</h1>
-
+        
         {{ page.content | safe }}
     </div>
 {% endblock content %}
