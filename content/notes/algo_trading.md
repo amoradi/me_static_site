@@ -1,3 +1,12 @@
++++
+
+title = ""
+template = "notes.html"
+description = ""
+draft = true
+
++++
+
 The most popular market sectors are commodities (metals, agricultural produce), energy (oil, gas), equities (stocks of different companies), interest rate bonds (coupons you get in exchange for debt, which accrues interest, hence the name), and foreign exchange (cash exchange rates between currencies for different countries):
 
 
