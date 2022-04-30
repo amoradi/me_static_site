@@ -3,7 +3,7 @@
 title = "Basic Concepts of Probability"
 template = "notes.html"
 description = ""
-draft = true
+draft = false
 
 +++
 
