@@ -6,7 +6,11 @@ description = "Integrity, Agility & Operations Principles"
 
 +++
 
-## Integrity
+- [Integrity](#integrity)
+- [Agility](#agility)
+- [Operations](#operations)
+
+## <a id="integrity"></a>Integrity
 
 ### One Graph
 Ensuring that the graph is well-defined, stable, and consistent
@@ -23,7 +27,7 @@ There should be a **single source of truth** for registering and tracking the gr
 
 > The schema registry should become the **central hub of the system**, **powering developer tools**, **workflows**, or any business processes that would benefit from awareness of the graph and **any actual or proposed changes to it**.
 
-## Agility
+## <a id="agility"></a>Agility
 Rapidly rolling out the graph and continuously adapting it to changing needs
 
 6. Iteratively Improve Performance
@@ -49,7 +53,7 @@ Rapidly rolling out the graph and continuously adapting it to changing needs
 ### Use Graph Metadata to Empower Developers
 - Developers should be equipped with rich awareness of the graph throughout the entire development process.
 
-## Operations
+## <a id="operations"></a>Operations
 Securely deploying the graph to production at scale
 
 - Grant access to the graph on a per-client basis, and manage what and how clients can access it.

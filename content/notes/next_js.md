@@ -1,4 +1,11 @@
++++
 
+title = "Principled GraphQL"
+template = "notes.html"
+description = "Integrity, Agility & Operations Principles"
+draft = true
+
++++
 
 On a website we can have 2 kinds of pages:
 
