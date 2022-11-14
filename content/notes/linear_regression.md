@@ -27,7 +27,7 @@ loss = (-1)^2 + (3)^2 = 1 + 9 = 10
 
 ## Fitted and Residual Values
 
-<img style="float:right; padding-left: 30px; padding-right: 5px; width: 208px;" src="/images/residuals_fitted_values.png"> 
+<img style="float:right; padding-left: 30px; padding-right: 5px; width: 208px;" src="/images/fitted_residuals.png"> 
 
 The **fitted values** are the predicted weights for each person in the dataset that was used to fit the model, while the **residuals** are the **differences between the predicted weight and the true weight** for each person
 
