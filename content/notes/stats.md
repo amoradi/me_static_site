@@ -38,7 +38,7 @@ categories, labels, etc. that are not numerical measures of counts.
 
 **Quantitative variables** are variables whose possible values are numeerical measurements or counts.
 
-**Citation**
+### Citation 
 westcottcourses.com
 
 
