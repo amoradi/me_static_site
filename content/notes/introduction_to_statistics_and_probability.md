@@ -88,7 +88,7 @@ If the sample is not representative of the population, then the sample has **bia
 
 **Nonresponse bias** occurs when individuals in the sample do not respond to the survey.
 
-**Reponse bias** occurs when the response of an individual in the sample does not reflect the true feelings of the individual. 
+**Response bias** occurs when the response of an individual in the sample does not reflect the true feelings of the individual. 
 
 ### Citation 
 westcottcourses.com
