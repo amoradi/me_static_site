@@ -36,7 +36,7 @@ It is a very important aspect of research, as it allows us to get an overview of
 **Qualitative (or categorical) variables** are variables whose possible values represent 
 categories, labels, etc. that are not numerical measures of counts.
 
-**Quantitative variables** are variables whose possible values are numeerical measurements or counts.
+**Quantitative variables** are variables whose possible values are numerical measurements or counts.
 
 A variable is at the **nominal level of measurement** if the possible values of the variable represent names, labels, or categories that don't have a meaningful rank or order.
 
@@ -58,6 +58,8 @@ A quantitative variable is **discrete** if its possible values can be listed.
 
 A quantitative variable is **continuous** if its possible values cannot be listed.
 
+<img style="padding: 30px 0; width: 600px;" src="/images/variable_classification.png"> 
+
 ## 1.3 Simple Random Sampling
 
 **Frame**: a list of all individuals.
@@ -74,19 +76,19 @@ A quantitative variable is **continuous** if its possible values cannot be liste
 
 This sampling technique is very popular because it is fast, inexpensive, and easy to do. Unfortunately, studies that use convenience sampling generally cannot be trusted.
 
-**Stratified sampling** is a sampling technique where the population is separated into disjoint (non-overlapping) groups called **strata**, and then a simple random sample from each **stratum** is obtained.
+**Stratified sampling** is a sampling technique where the population is separated into disjoint (non-overlapping) groups called **strata**, and then a **simple random sample from each stratum** is obtained.
 
-Random sample **within** all groups.
-
-**Cluster sampling** is a sampling technique where the population is separated into disjoint groups, a simple random sample of groups are selected, and every individual or a random sample of individuals within the selected groups are observed.
-
-Random sample **among** all groups. Once random groups are selected, every individual within the groups is selected.
+**Cluster sampling** is a sampling technique where the population is separated into disjoint groups, **a simple random sample of groups are selected**, and, **every individual or a random sample of individuals** within the **selected groups** are observed.
 
 **Systematic sampling** is a sampling technique where every kth individual in the population is selected after some random start. Usually, the random start is determined by selecting a random number between 1 and k.
 
 ## 1.5 Sample Bias
 
-If the sample is not representative of the population, then the sample has **bias**...if the sampling technique used tends to favor one part of the population over the another, then we have **sampling bias**.
+If the sample is not representative of the population, then the sample has **bias**...if the sampling technique used **tends to favor one part of the population over another**, then we have **sampling bias**.
+
+**Nonresponse bias** occurs when individuals in the sample do not respond to the survey.
+
+**Reponse bias** occurs when the response of an individual in the sample does not reflect the true feelings of the individual. 
 
 ### Citation 
 westcottcourses.com
