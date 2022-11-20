@@ -23,7 +23,7 @@ It is often the case that time, money, and resources limit the ability of a rese
 **Descriptive Statistcs**
 Involves the organizing and summarizing of data. Some common tools in the process are tables, graphs, and numberical summaries.
 
-It is a verey important as\pect of research, as it allows us to get an overview of what the data is telling us.
+It is a very important aspect of research, as it allows us to get an overview of what the data is telling us.
 
 ## The Process of Statistics
 - Identify the research objective.
