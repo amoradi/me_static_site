@@ -5,6 +5,7 @@ template = "notes.html"
 description = ""
 
 +++
+# Chapter 1: Data Collection and Classification
 
 ## 1.1 The Basic of Statistics
 **Statistics**
@@ -89,6 +90,42 @@ If the sample is not representative of the population, then the sample has **bia
 **Nonresponse bias** occurs when individuals in the sample do not respond to the survey.
 
 **Response bias** occurs when the response of an individual in the sample does not reflect the true feelings of the individual. 
+
+# Chapter 2: Graphical Displays of Data
+
+## 2.1 Organizing Qualitative Data
+
+A **frequency distribution** is a table that lists each category of data and shows the number of obervations in each category.
+
+Each category of data is referred to as a **class**.
+
+The **class frequency** is the number of observations that fall into that class. The **relative class frequency** is the proportion of observations that fall into that class.
+
+A **relative frquency distribution** is a table that lists each category of data and shows the proportion of observations in each category.
+
+Note: The sum of the relative frequencies in a relative frequency distribution must add to 1. However, in practice, this may not be the case due to rounding errors. Again, the order in which the classes are listed, the spaciing, the scaling, and the use of any colors is up to the researcher.
+
+A **frequency bar graph** is constructed by labeling each category of data on either the horizontal or vertical axis, and its frequency on the other axis. Bars of equal width are drawn for each category, and the height of each bar represents the category's frequency.
+
+A **relative frequency bar graph** is constructed by labeling each category of data on either the horizontal or vertical axis, and its relaitve frequency on the other axis. Bars of equal width are drawn for each category, and the height of each bar represents the category's relative frequency.
+
+If one orders bars by decreasing height, we have what is called a **Pareto chart**.
+
+The angle of a class sector in a pie chart, is obtained by mulitplynig 360 degrees by the relative class frequency.
+
+## 2.2 Organizing Quantitative Data
+
+First, determine if the data is discrete or continuous. **If the data is discrete** and there **are not too many different values**, **treat each observed data value as a class**. If the data is discrete, but there are **many different values**, then **categories of data should be created** by using **intervals of numbers as the classes**.
+
+In the case that the data is continuous, then **categories of data** should be created **using intervals**.
+
+A **frequency distribution** is a table that lists each category (class) of data and shows the number of observations in each category.
+
+Guildine: Generally, there should be between 5 classes (for smaller data sets) and 200 classes (for larger data sets).
+
+Each class has a **lower class limit**, which is the least number that can belong to the classs, and an **upper class limit**, which is the greatest number that can belong to the class. The average of the upper class limit and lower class limit is called the **class midpoint**. The **class width** is the **difference between two consecturive lower class limits**, and **should be the same for all classes**.
+
+Usually, introductory statistics textbooks only address the above terms when dealing with continuous data.
 
 ### Citation 
 westcottcourses.com
