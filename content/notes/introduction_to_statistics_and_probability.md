@@ -5,7 +5,8 @@ template = "notes.html"
 description = ""
 
 +++
-# Chapter 1: Data Collection and Classification
+
+## Chapter 1: Data Collection and Classification
 
 ## 1.1 The Basic of Statistics
 **Statistics**
@@ -91,7 +92,7 @@ If the sample is not representative of the population, then the sample has **bia
 
 **Response bias** occurs when the response of an individual in the sample does not reflect the true feelings of the individual. 
 
-# Chapter 2: Graphical Displays of Data
+## Chapter 2: Graphical Displays of Data
 
 ## 2.1 Organizing Qualitative Data
 
