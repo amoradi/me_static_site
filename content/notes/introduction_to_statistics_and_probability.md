@@ -56,9 +56,9 @@ A variable is at the **ratio level of measurement** if the values of the variabl
 - Meaningful difference between values,
 - The value of zero is an **inherent zero**.
 
-A quantitative variable is **discrete** if its possible values can be listed.
+A quantitative variable is **discrete** if its possible values can be listed. Data only takes certain values. Commonly in the form of whole numbers or integerss, this is data that can be counted and has a finite number of values. These values are unable to be broken down into smaller parts.
 
-A quantitative variable is **continuous** if its possible values cannot be listed.
+A quantitative variable is **continuous** if its possible values cannot be listed. This data can be measured, values are not fixed and have an infinite number of possible values. These measurements can also be broken down into smaller individual parts.
 
 <img style="padding: 30px 0; width: 600px;" src="/images/variable_classification.png"> 
 
@@ -102,7 +102,7 @@ Each category of data is referred to as a **class**.
 
 The **class frequency** is the number of observations that fall into that class. The **relative class frequency** is the proportion of observations that fall into that class.
 
-A **relative frquency distribution** is a table that lists each category of data and shows the proportion of observations in each category.
+A **relative frequency distribution** is a table that lists each category of data and shows the proportion of observations in each category.
 
 Note: The sum of the relative frequencies in a relative frequency distribution must add to 1. However, in practice, this may not be the case due to rounding errors. Again, the order in which the classes are listed, the spaciing, the scaling, and the use of any colors is up to the researcher.
 
@@ -124,9 +124,29 @@ A **frequency distribution** is a table that lists each category (class) of data
 
 Guildine: Generally, there should be between 5 classes (for smaller data sets) and 200 classes (for larger data sets).
 
-Each class has a **lower class limit**, which is the least number that can belong to the classs, and an **upper class limit**, which is the greatest number that can belong to the class. The average of the upper class limit and lower class limit is called the **class midpoint**. The **class width** is the **difference between two consecturive lower class limits**, and **should be the same for all classes**.
+Each class has a **lower class limit**, which is the least number that can belong to the classs, and an **upper class limit**, which is the greatest number that can belong to the class. The average of the upper class limit and lower class limit is called the **class midpoint**. The **class width** is the **difference between two consectutive lower class limits**, and **should be the same for all classes**.
 
 Usually, introductory statistics textbooks only address the above terms when dealing with continuous data.
+
+Class boundaries (**lower and upper class boundaries**) coincide with the midpoints found by averaging each upper class limit with its right neighboring lower class limit. They are the endpoints of touching intervals. Typically, adding and substracting .5, .05, or .005 from the upper/lower class limits repsectively will do the trick.
+
+For example classes, 2-4, 5-7, 8-10. Have lower class boundaries of 1.5, 4.5, 7.5 and upper class boundaries of, 4.5, 7.5, 10.5.
+
+Limits = inclusive
+Boundaries = exclusive
+
+**Class frequency** is the number of observations that fall into that class.
+**Relative class frequency** is the proportion of observations that fall into that classs.
+
+A **relative frequency distribution** is a table that lists each category of data and shows the proportion of observations in each category.
+
+A **histogram** is similar to a bar graph, execpt that the rectangles in histograms touch, while the bars in bar graphs do not touch. When the vertical scale measures the frequencies of the classes, we have a **frequency histogram**. When the vertical scale measures the relative frequencies of the classes, we have a **relative frequency historgram**.
+
+## 2.3 Additional Displays of Quantitative Data
+
+The **cumulative frequency** of a class is the sum of the frequency of that class and the frequencies of all previous classes.
+
+The **cumulative relative frequency** of a class is the sum of the relative frequency of that class and the relative frequencies of all previous classes.
 
 ### Citation 
 westcottcourses.com
