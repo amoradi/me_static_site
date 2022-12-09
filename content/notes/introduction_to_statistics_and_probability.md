@@ -148,6 +148,36 @@ The **cumulative frequency** of a class is the sum of the frequency of that clas
 
 The **cumulative relative frequency** of a class is the sum of the relative frequency of that class and the relative frequencies of all previous classes.
 
+A **dot plot** is a graphical display of data drawn by placing each observation horizontally on a number line and placing a dot above the observation for each time it is observed.
+
+In a **stem and leaf plot**, each number is separated into a **stem** (digits left of the rightmost digit) and a **leaf** (the rightmost digit). Stems are written in a single vertical column, and a vertical bar to the right of that column is drawn, and each leaf is written to the right of the vertical bar in the row corresponding to its stem.
+
+```
+// e.g. 
+10.2 -> 10 (stem) | 2 (leaf)
+112 -> 11 (stem) | 2 (leaf)
+```
+
+## 2.4 Shapes of Distributions
+
+A frequency distribution is **symmetric** when a vertical line can be drawn through the middle of the graph of the distribution, and the resulting halves are mirror images of each other.
+
+A frequency distribution is **uniform** when all classes in the distribution have equal frequencies. A frequency distribution that is shaped like a bell is called **bell-shaped**.
+
+(single peak assumed)
+**Skewed left (negatively skewed)**: left tail is longer than right tail.
+**Skewed right (positively skewed)**: right tail is longer than left tail.
+
+**Qualitative data** is **not** described as uniform, bell-shaped, or skewed, **since the order** in which the classes are displayed is **arbitrary**. We only use these terms to describe quantitative data.
+
+Data will probably not perfectly match one of the four descriptions, so we use "approximately" symmetric/uniform/etc. to describe.
+
+The **shape of the distribution** is often times **subjective** (especially since changing the class width and number of classes used in a frequency distribution can drastically change the shape of the histogram). The terms are introduced informally, not precisely, for the benefit of exposure to the terms.
+
+**Bidmodal**: having two peaks.
+
+For these notes, if a distribution is not unimodal, we will not attempt to classify the shape.
+
 ### Citation 
 westcottcourses.com
 
