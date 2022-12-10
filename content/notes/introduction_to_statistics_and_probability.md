@@ -140,7 +140,7 @@ Boundaries = exclusive
 
 A **relative frequency distribution** is a table that lists each category of data and shows the proportion of observations in each category.
 
-A **histogram** is similar to a bar graph, execpt that the rectangles in histograms touch, while the bars in bar graphs do not touch. When the vertical scale measures the frequencies of the classes, we have a **frequency histogram**. When the vertical scale measures the relative frequencies of the classes, we have a **relative frequency historgram**.
+A **histogram** is similar to a bar graph, except that the rectangles in histograms touch, while the bars in bar graphs do not touch. When the vertical scale measures the frequencies of the classes, we have a **frequency histogram**. When the vertical scale measures the relative frequencies of the classes, we have a **relative frequency historgram**.
 
 ## 2.3 Additional Displays of Quantitative Data
 
