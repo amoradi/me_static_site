@@ -310,7 +310,7 @@ The sum of deviations about the mean and the mean of deviations about the mean a
 
 Using absolute values of deviations about the mean is a way to circumvent zero sums, and work with/find central tendencies with deviations. These can be described with:
 - **Mean absolute deviation**
-- **Media absolute deviation**
+- **Median absolute deviation**
 
 Absolute deviations prevent positive deviations from canceling negative deviations. Another way to prevent this is to **square deviations** about the mean.
 
@@ -344,7 +344,7 @@ For any data set, regardless of the shape of the distrubution;
 
 - At least 75% of the data will lie within 2 std deviations of the mean
 - At least 88.9% of the data will lie within 3 std deviations of the mean
-- At least `(1 - 1/k^2)100% of the data will lie within K standard deviations of the mean for k > 1. That is, at least (1 - 1/k^2)100% of the data
+- At least `(1 - 1/k^2)100%` of the data will lie within K standard deviations of the mean for k > 1. That is, at least `(1 - 1/k^2)100%` of the data
 will lie between `μ - kσ` and `μ + kσ`
 
 This is also true for sample data, x̄.
