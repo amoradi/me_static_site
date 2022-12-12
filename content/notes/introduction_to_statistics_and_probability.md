@@ -178,6 +178,177 @@ The **shape of the distribution** is often times **subjective** (especially sinc
 
 For these notes, if a distribution is not unimodal, we will not attempt to classify the shape.
 
+
+## 3.1 Measures of Central Tendency
+
+A sample dataset is written with a lowercase n.
+
+```
+n = 5
+```
+
+A population dataset is written with an upperecase N.
+
+```
+N = 5
+```
+
+Most introductory stats textbooks drop the sigma sub/superscripts and just write `Σ x = ...`, which is interpreted as "the sum of all oberservations in the data set". Dropping the sub/superscripts makes it unclear whether the data set represents a sample or a population.
+
+Example 1:
+Consider the data set: `{10, 11, 11, 13, 14}`
+
+Evaluate: `Σ x`
+
+Solution:
+`Σ x` means "add all of the observations in the data set".
+
+`Σ x = 59`
+
+Example 2:
+Consider the data set: `{10, 11, 11, 12, 13}`
+
+Evaluate: `Σ x/2`
+
+Solution:
+`Σ x/2` means "divide each observation by 2, then add them all".
+
+`Σ x/2 = 28.5`
+
+It turns out, `Σ x/2` is equivalent to `(Σ x)/2`.
+
+**Arithmetic mean** is the sum of data values divided by the number of data values — in everyday parlance we refer to this as the **mean**.
+
+`x̄`, pronounced X bar, represents the **sample mean**.
+
+`μ` represents the **population mean**.
+
+`x̄ = Σ x/n` is considered a **statistic**, b/c it involves the sample.
+`μ = Σ x/N` is considered a **parameter**, b/c it involves the population.
+
+The **median** is found via taking the middle value when arranged from lowest to highest. If there are an even number of observations, then the mean of the two middle values is usedss.
+
+There is no widely accepted standard symbol for the median.
+
+The **mode** of a data set (quantitative or qualitative) is the data value of the highest frequency. If no data value is repeated, the data has no mode.
+
+There are other interpretations of the mode in terms of local maximums of a frequencyy distribution which can allow for more than one mode, **bimodal, trimodal, or multimodal**.
+
+The **weighted mean** of a quantitative data set is similar to the mean of the data set, except that the data values are **assigned weights**.
+
+`(Σ wi * xi) / Σ wi`
+
+Meaning, multiply each data value by its weight, add them up, then divide that sum by the sum of the weights.
+
+Example given data set, `{ 10, 20, 30, 40 }` and weights, `{ 20, 20, 40, 20 }`.
+
+```
+// sigma (weight * data value) / sigma weights
+
+(20*10 + 20*20 + 40*20 + 20*40) / 20 + 20 + 40 + 20
+
+= 2600 / 100
+= 26
+```
+
+Often, a course will use a weighted average to calculate final class grades. E.g 15% from your mean homework, 15% from quizes, and 70% from the final exam.
+
+```
+// weights: 15, 15, 70
+// grades: 85, 90, 82
+
+(15*85 + 15*90 + 70*82) / 100
+
+= 83.65
+```
+
+A **measure of central tendency** is a single value that attempts to describe a set of data by identifying the central position within a data set.
+
+We say that a measure of central tendency is **resistant** if **extreme values relative to the data do not affect its value** substantially.
+
+The **median and mode** are resistant to extreme values (outliers), but the **mean is not**.
+
+Aside: Other means exist including, the geometric mean, harmonic mean, generalized mean (power mean), f-mean, truncated mean, etc.
+
+1*0 + 2*2 + 3*3 + 4*4 / 10
+
+
+## 3.2 Measure of Dispersion
+
+Statistical **dispersion** refers to how stretched or squeezed the data are. Measures include:
+
+- Range
+- Standard Deviation
+- Variance
+- Interquartile range
+- Median absolute deviation
+- Average absolute deviation
+
+
+**Range**
+```
+range = greatest value - least data value
+```
+
+- Can never be negative
+- Is in same units as the data
+- Sample range, population range, or simply range
+- Is generally not sufficient to describe the spread of data. 
+- Is not resistant to extreme values.
+
+**Deviation about the mean** is equal to the ith data value minus the mean of the data set.
+
+```
+// sample
+di = xi - x̄
+
+// population
+di = xi - μ
+```
+
+The sum of deviations about the mean and the mean of deviations about the mean are both zero.
+
+Using absolute values of deviations about the mean is a way to circumvent zero sums, and work with/find central tendencies with deviations. These can be described with:
+- **Mean absolute deviation**
+- **Media absolute deviation**
+
+Absolute deviations prevent positive deviations from canceling negative deviations. Another way to prevent this is to **square deviations** about the mean.
+
+**Sample variance**
+`(Σ (x - x̄)^2) / n - 1`
+
+**Population variance**
+`(Σ (x - μ)^2) / N`
+
+The **sample standard deviation** is defined as the square root of the sample variance, and we use the symbol `s` to denote it. The **population standard deviation** is defined as the square root of the population variance, and we use the symbol `σ` to denote it.
+
+We use `n - 1` in the denominator for sample variation and sample standard deviation. This results in an **overestimate** of values, some would say an approximatation of said values. This is not true for population variance and standard deviation.
+
+**Standard deviation is the sqaure root of the variance**. Standard deviation can be larger that variance when working with variances less than one, e.g. 
+- variance = 1/4, std deviation = 1/2 AKA the sqaure root of 1/4 = 1/2
+  
+
+**The Empirical Rule**
+
+If a distribution is roughly bell shaped, then:
+
+- ~68% of the data will lie within 1 std deviation of the mean (`μ - 1σ` and `μ + 1σ`)
+- ~95% will lie within 2σ 
+- ~99.7% will lie within 3σ
+
+This is also true for sample data, x̄.
+
+**Chebychev's Rule**
+
+For any data set, regardless of the shape of the distrubution;
+
+- At least 75% of the data will lie within 2 std deviations of the mean
+- At least 88.9% of the data will lie within 3 std deviations of the mean
+- At least `(1 - 1/k^2)100% of the data will lie within K standard deviations of the mean for k > 1. That is, at least (1 - 1/k^2)100% of the data
+will lie between `μ - kσ` and `μ + kσ`
+
+This is also true for sample data, x̄.
+
 ### Citation 
 westcottcourses.com
 
