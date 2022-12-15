@@ -351,6 +351,33 @@ This is also true for sample data, x̄.
 
 ## 3.3 Measures of Central Tendency and Dispersion From Grouped Data
 
+**Approximating the Mean** from a Frequency Distribution
+
+1) Multiply each class midpoint by its class frequency.
+2) Sum all the products calculated in step 1.
+3) Sum all the class frequencies to obtain the total number of data values in the data set.
+4) Divide the sum in step 2 by the sum in step 3.
+
+```
+(Σ mi * fi) / Σ fi
+```
+
+**Approximating the Variance** from a Frequency Distribution
+
+1) Calculate the mean.
+2) Calculate the squared deviations.
+3) Multiply each squared deviation by its corresponding class frequency.
+4) Sum all products from step 3.
+5) Sum all the class frequencies.
+6) If the data set represents a population, divide by sigma class frequencies. If the data set represents a sample, divide by sigma cf - 1.
+
+```
+sample variance = (Σ (mi * x̄)^2 * fi) / (Σ fi) - 1
+```
+
+```
+population variance = (Σ (mi * μ)^2 * fi) / (Σ fi)
+```
 
 
 ### Citation 
