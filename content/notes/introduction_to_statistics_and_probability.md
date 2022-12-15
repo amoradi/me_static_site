@@ -226,7 +226,7 @@ It turns out, `Σ x/2` is equivalent to `(Σ x)/2`.
 `x̄ = Σ x/n` is considered a **statistic**, b/c it involves the sample.
 `μ = Σ x/N` is considered a **parameter**, b/c it involves the population.
 
-The **median** is found via taking the middle value when arranged from lowest to highest. If there are an even number of observations, then the mean of the two middle values is usedss.
+The **median** is found via taking the middle value when arranged from lowest to highest. If there are an even number of observations, then the mean of the two middle values is used.
 
 There is no widely accepted standard symbol for the median.
 
@@ -348,6 +348,10 @@ For any data set, regardless of the shape of the distrubution;
 will lie between `μ - kσ` and `μ + kσ`
 
 This is also true for sample data, x̄.
+
+## 3.3 Measures of Central Tendency and Dispersion From Grouped Data
+
+
 
 ### Citation 
 westcottcourses.com
