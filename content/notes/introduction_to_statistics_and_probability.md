@@ -414,6 +414,49 @@ To find quartiles:
  
 ^ This definition of quartiles is widely held but not only held.
 
+## 3.5 - The Five Number Summary and Boxplots
+
+The **interquartile range**, denoted **IQR**, is the **range of the middle 50% of the data** values in a data set.
+
+```
+IQR = Q3 - Q1
+```
+
+The **lower fence** and **upper fence** are defined as follows:
+Lower fence = Q1 - 1.5(IQR)
+Upper fence = Q3 + 1.5(IQR)
+
+If a data value is less than the lower fence or greater than the upper fence, it is considered an **outlier**.
+
+**The Five number Summary**
+
+The range, std, and variance of a data set are not resistant to extreme values. The interquartile range, however, is resistant.
+
+Q1-3 do not provide any information about the extreme values of the data set. One way to obtain this information is to determine the minimum and maximum values in a data set.
+
+The five number summary consists of:
+- minumum data value
+- Q1
+- Q2 (median)
+- Q3
+- maximum data value
+
+**Drawing a Boxplot**
+
+- Determine the lower and upper fences
+- Draw vertical lines at Q1, Q2, Q3 and enclose the lines in the box
+- Draw a horizontal line through the middle of the box, from lowest to greatest data values interior to the fences (the whiskers)
+  - The 1st value to the right of the lower fence
+  - The 1st value to the left of the upper fence
+- Draw small verticle lines to cap the horizontal line in step 3
+- Any outlierers are marked with a small circle. (outside the lower and upper fences)
+
+Some refer to the boxplot as a box-and-whisker plot.
+
+A boxplot gives us a good description of the spread and variability of a data set as well as some idea about the shape of the distribution; particularly if a data set is skewed.
+
+<img style="width: 400px;" src="/images/box_plot_skewness.png"> 
+
 ### Citation 
 westcottcourses.com
 
