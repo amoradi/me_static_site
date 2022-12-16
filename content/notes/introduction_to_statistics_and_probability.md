@@ -382,6 +382,37 @@ population variance = (Σ (mi - μ)^2 * fi) / (Σ fi)
 To **approximate the standard deviation** from a frequency distribution, simply take the square root of the variance (see above).
 
 
+## 3.4 - Measures of Relative Standing
+
+Measures of relative standing are numbers which indicate where a particular value lies in relation to the rest of the values in a data set. There are many different measures of relative standing, but we will just cover the two most common measures in statistics: `z-scores` and `quartiles`.
+
+The **z-score** of a data value represents the number of standard deviations the data value is away from the mean of the data set.
+
+```
+// sample z-score
+(x - x̄) / S
+
+// population z-score
+(x - μ) / σ
+```
+
+- If z-score is negative, x is less than the data set
+- If z-score is positive, x is more than the data set
+- If z-score is zero, x is the mean of the data set
+
+The **kth percentile** of a data set is a value such that k percent of the data values are less than or equal to the value. 
+
+**Quartiles** are a special case of percentiles.
+- Q1 25th, Q2 50th AKA the median, Q3 75th percentiles
+
+To find quantiles:
+- Arrange data in ascending order
+- Find the median (second quartile)
+- Divide the data set into 2 halves
+- The 1st and 3rd quartiles will be the median of the lower and upper halves respectively
+- Do not include (n + 1) / 2 AKA step 2in either half.
+ 
+^ This definition of quartiles is widely held but not only held.
 
 ### Citation 
 westcottcourses.com
