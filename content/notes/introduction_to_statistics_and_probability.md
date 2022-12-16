@@ -372,12 +372,15 @@ This is also true for sample data, x̄.
 6) If the data set represents a population, divide by sigma class frequencies. If the data set represents a sample, divide by sigma cf - 1.
 
 ```
-sample variance = (Σ (mi * x̄)^2 * fi) / (Σ fi) - 1
+sample variance = (Σ (mi - x̄)^2 * fi) / (Σ fi) - 1
 ```
 
 ```
-population variance = (Σ (mi * μ)^2 * fi) / (Σ fi)
+population variance = (Σ (mi - μ)^2 * fi) / (Σ fi)
 ```
+
+To **approximate the standard deviation** from a frequency distribution, simply take the square root of the variance (see above).
+
 
 
 ### Citation 
