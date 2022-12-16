@@ -405,7 +405,7 @@ The **kth percentile** of a data set is a value such that k percent of the data 
 **Quartiles** are a special case of percentiles.
 - Q1 25th, Q2 50th AKA the median, Q3 75th percentiles
 
-To find quantiles:
+To find quartiles:
 - Arrange data in ascending order
 - Find the median (second quartile)
 - Divide the data set into 2 halves
