@@ -42,7 +42,7 @@ categories, labels, etc. that are not numerical measures of counts.
 
 A variable is at the **nominal level of measurement** if the possible values of the variable represent names, labels, or categories that don't have a meaningful rank or order.
 
-A variable is at the **ordinal level of measurement** if the possible values of the variable represent names, labels, or categories and have a meaningufl rank or order.
+A variable is at the **ordinal level of measurement** if the possible values of the variable represent names, labels, or categories and have a meaningful rank or order.
 
 When the value of zero means the absence of the quantity, we have an **inherent zero**.
 
@@ -456,6 +456,12 @@ Some refer to the boxplot as a box-and-whisker plot.
 A boxplot gives us a good description of the spread and variability of a data set as well as some idea about the shape of the distribution; particularly if a data set is skewed.
 
 <img style="width: 400px;" src="/images/box_plot_skewness.png"> 
+
+## 4.1 - The Basics of Probability
+
+In probability theory, an **experiment** is any procedure with uncertain results that can be repeated and has a well-defined set of possible outcomes known as the **sample space**.
+
+An **event** is any collection of outcomes (one or more) from a probability experiment.
 
 ### Citation 
 westcottcourses.com
