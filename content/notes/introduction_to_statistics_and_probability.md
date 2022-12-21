@@ -463,6 +463,34 @@ In probability theory, an **experiment** is any procedure with uncertain results
 
 An **event** is any collection of outcomes (one or more) from a probability experiment.
 
+**Probability** is a measure of the likelihood of the occurrence of an event.
+
+There are three type of probability that we will discuss:
+- Classical (theoretical) probability
+- Emperical probability
+- Subjective probability
+
+If an experiment has `n` equally likely outcomes, we define the probability of each outcome to b `1/n`.
+The probability of an event `E` is defined to be the number of outcomes in the event that belong to the sample space divided by `n`.
+We use the notation `P(E)`, which is read, "P of E" or "the probability of E" to denote the probability of the event `E`.
+
+```
+// In other words...
+// (Think of E as a collection of outcomes, i.e. a subset of the sample space.)
+P(E) = Number of possible outcomes in the event E / Total number of outcomes in the sample space
+```
+
+- If `P(E) = 0`, then `E` is an event that is impossible to occur. In this case, we call teh event `E` an `impossible event`.
+- If `P(E) = 1`, then `E` must occur with certainty — a `certain event`.
+- If `P(E) < 0.05`, then `E` is considered unlikely to occur — an `unusual event`.
+
+The **emperical probability** of an event is the ratio of the number of trials in which the event occured, divided by the total number of trials performed.
+
+**Subjective probability** is a **probability derived from an individual's personal judgment** about the likelihood that an event occurs. Subjective probabilities **contain no formal calculations** and only reflect the subject's opinions and past experience.
+
+**The Law of Large Numbers:** As the number of repetitionss of a probability experiment increases, the proportion with which a certain outcome is observed gets closer to the classical (theoretical) probability of the outcome.
+
+
 ### Citation 
 westcottcourses.com
 
