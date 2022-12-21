@@ -490,6 +490,25 @@ The **emperical probability** of an event is the ratio of the number of trials i
 
 **The Law of Large Numbers:** As the number of repetitionss of a probability experiment increases, the proportion with which a certain outcome is observed gets closer to the classical (theoretical) probability of the outcome.
 
+## 4.2 The Addition and Complement Rule
+
+Two events are **mutually exclusive (disjoint)** if they have no outcomes in common. In other words, if one event occurs, the other event cannot occur.
+
+`A ∩ B` - "A and B", the intersection of A and B. All outcomes in both A and B.
+
+`A ∪ B` - "A or B", the union of A and B. All outcomes in A, B or both, none counted twice.
+
+**The addition rule** = `A ∪ B = P(A) + P(B) - P(A ∩ B)`
+^ Can be seen in a venn diagram.
+
+
+The **complement** of an event A is the event that A does not occur, `A^c`.
+
+`A ∪ A^c` equals the entire sample space.
+
+**The complement rule** = `P(A^c) = 1 - P(A)`
+
+
 
 ### Citation 
 westcottcourses.com
