@@ -509,6 +509,19 @@ The **complement** of an event A is the event that A does not occur, `A^c`.
 **The complement rule** = `P(A^c) = 1 - P(A)`
 
 
+## 4.3 Conditional Probability and The Multiplication Rule
+
+A **conditional probability** is the probability of an event occurring, given that another event has already occured.
+
+The notation `P(A|B)` is read, "the probability of A, given event B" and  it is the probability that event A occurs, given that B has already occured.
+
+- Conditional probability can be calculated by reducing the sample space, assuming that event B has occured.
+- Another way to calculate conditional probability is to use the following formula on the **unreduced sample space**.
+
+`P(A|B) = P(A ∩ B)) / P(B)`
+
+Two events are **independent**, provided that the occurence of one event does not affect the probability that the other event occurs. In other words, 
+`P(A|B) = P(A)` or `P(B|A) = P(B)`. If one of these equations is not satisified, then the events are  **dependent**. (Note only 1 of the 2 equations needs to be satified to determine independence or dependence. This is because the truth status of one equation implies the truth status of the other equation.)
 
 ### Citation 
 westcottcourses.com
