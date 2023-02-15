@@ -532,7 +532,7 @@ When events are dependent:
 - MR1: `P(A∩B) = P(A|B)P(B)`
 - MR2: `P(A∩B) = P(B|A)P(A)`
 
-Note, **be** careful when declaring that two events are independent. **Use the mathematical definition of independence, not your intuition**. It is possible for two events to be independent in one sample space, but dependent in another sample space.
+Note, **be careful** when declaring that two events are independent. **Use the mathematical definition of independence, not your intuition**. It is possible for two events to be independent in one sample space, but dependent in another sample space.
 
 ### Citation 
 westcottcourses.com
