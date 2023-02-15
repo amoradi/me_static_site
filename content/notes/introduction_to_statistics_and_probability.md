@@ -56,7 +56,7 @@ A variable is at the **ratio level of measurement** if the values of the variabl
 - Meaningful difference between values,
 - The value of zero is an **inherent zero**.
 
-A quantitative variable is **discrete** if its possible values can be listed. Data only takes certain values. Commonly in the form of whole numbers or integerss, this is data that can be counted and has a finite number of values. These values are unable to be broken down into smaller parts.
+A quantitative variable is **discrete** if its possible values can be listed. Data only takes certain values. Commonly in the form of whole numbers or integers, this is data that can be counted and has a finite number of values. These values are unable to be broken down into smaller parts.
 
 A quantitative variable is **continuous** if its possible values cannot be listed. This data can be measured, values are not fixed and have an infinite number of possible values. These measurements can also be broken down into smaller individual parts.
 
@@ -513,7 +513,7 @@ The **complement** of an event A is the event that A does not occur, `A^c`.
 
 A **conditional probability** is the probability of an event occurring, given that another event has already occured.
 
-The notation `P(A|B)` is read, "the probability of A, given event B" and  it is the probability that event A occurs, given that B has already occured.
+The notation **`P(A|B)`** is read, **"the probability of A, given event B"** and  it is the probability that event A occurs, given that B has already occured.
 
 - Conditional probability can be calculated by reducing the sample space, assuming that event B has occured.
 - Another way to calculate conditional probability is to use the following formula on the **unreduced sample space**.
@@ -522,6 +522,17 @@ The notation `P(A|B)` is read, "the probability of A, given event B" and  it is 
 
 Two events are **independent**, provided that the occurence of one event does not affect the probability that the other event occurs. In other words, 
 `P(A|B) = P(A)` or `P(B|A) = P(B)`. If one of these equations is not satisified, then the events are  **dependent**. (Note only 1 of the 2 equations needs to be satified to determine independence or dependence. This is because the truth status of one equation implies the truth status of the other equation.)
+
+The **multiplication rule** states that when events are independent, `P(A∩B) = P(A)P(B)`.
+
+Ex. A is observing heads and B is observing heads, `P(A∩B) = P(A)P(B) = .25`.
+
+When events are dependent:
+
+- MR1: `P(A∩B) = P(A|B)P(B)`
+- MR2: `P(A∩B) = P(B|A)P(A)`
+
+Note, **be** careful when declaring that two events are independent. **Use the mathematical definition of independence, not your intuition**. It is possible for two events to be independent in one sample space, but dependent in another sample space.
 
 ### Citation 
 westcottcourses.com
