@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/resume.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+    <title>{% block title %}{% endblock title %}</title>
+    <meta name="description" content="{% block desc %}{% endblock desc %}" />
+
+    {% block head %}{% endblock head %}
+</head>
+<body class="all all--resume">
+    <div class="important-content important-content--poised">
+        {% block content %}{% endblock content %}
+    </div>
+    <!-- <footer class="footer">
+        {% block footer %}
+        <i>Never have the world's moneys been so long cut off from their metallic roots.<br />- M. Rothbard</i>
+        {% endblock footer %}
+    </footer> -->
+</body>
+</html>
