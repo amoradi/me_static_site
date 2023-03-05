@@ -534,6 +534,62 @@ When events are dependent:
 
 Note, **be careful** when declaring that two events are independent. **Use the mathematical definition of independence, not your intuition**. It is possible for two events to be independent in one sample space, but dependent in another sample space.
 
+
+## 4.4 Introduction to Combinatorics
+
+
+The **multiplication principle**: If there are `m` ways of performing a task and `n` ways of performing another task, then there are `m * n` ways of performing both tasks in sequence.
+
+How many 2 digit codes are possible if the digits come from the set `{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }`?
+
+10 for the 1st digit and 10 for the 2nd digit. `10 * 100 = 100` according to the multiplication principle.
+
+With rules excluding 0 for the 1st digit and disallowing same-digit for the 2nd, we get `9 * 9 = 81`.
+
+A **permutation** is an ordered arrangement of objects. The number of distinct permutations of n distinct objects is `n!`.
+
+`n!` is read "n factorial" and is defined as: `n! 1 * 2 *** n` for all natural numbers `n`.
+We define `0!` to be 1.
+
+How many differenct permutations (arrangments) of string abc are there?
+
+3 factorial. 3! = 1 * 2 * 3 = 6
+
+Another formula to find permutations:
+
+**n Permuations r** order matters
+`nPr = n! / (n - r)!` 
+
+**n Combinations r** order does not matter, ab = ba
+`nCr= n! / (n - r)!r!`
+
+The number of arrangments of `r` objects taken from `n` objects.
+
+**Permutations with Non-distinct Objects** AKA Distinguishable Arrangements
+
+n1 ... nk are of differeing kinds.
+
+`n! / n1! * n2! * n3! .. nk!`
+
+How many permutations of the word "boo" are there?
+
+`n = 3 (3 letters)`
+
+kinds:
+
+`n1 = b = 1`
+`n2 = o = 2`
+
+`3! / 1!2!`
+
+7 balls, 2 blue, 3 red, 2 yellow
+
+`7! / 2!3!2!`
+
+`
+
+
+
 ### Citation 
 westcottcourses.com
 
