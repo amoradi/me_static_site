@@ -520,8 +520,15 @@ The notation **`P(A|B)`** is read, **"the probability of A, given event B"** and
 
 `P(A|B) = P(A ∩ B)) / P(B)`
 
+Independence test (given event has no bearing on next event):
+
+- `P(A|B) = P(A)`
+  - given `B`, `P(A)` equals `P(A)` alone
+- `P(B|A) = P(B)`
+  - given `A`, `P(B)`, equals `P(B)` alone
+
 Two events are **independent**, provided that the occurence of one event does not affect the probability that the other event occurs. In other words, 
-`P(A|B) = P(A)` or `P(B|A) = P(B)`. If one of these equations is not satisified, then the events are  **dependent**. (Note only 1 of the 2 equations needs to be satified to determine independence or dependence. This is because the truth status of one equation implies the truth status of the other equation.)
+`P(A|B) = P(A)` or `P(B|A) = P(B)`. If one of these equations is not satisified, then the events are **dependent**. (Note only 1 of the 2 equations needs to be satified to determine independence or dependence. This is because the truth status of one equation implies the truth status of the other equation.)
 
 The **multiplication rule** states that when events are independent, `P(A∩B) = P(A)P(B)`.
 
@@ -542,7 +549,7 @@ The **multiplication principle**: If there are `m` ways of performing a task and
 
 How many 2 digit codes are possible if the digits come from the set `{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }`?
 
-10 for the 1st digit and 10 for the 2nd digit. `10 * 100 = 100` according to the multiplication principle.
+10 for the 1st digit and 10 for the 2nd digit. `10 * 10 = 100` according to the multiplication principle.
 
 With rules excluding 0 for the 1st digit and disallowing same-digit for the 2nd, we get `9 * 9 = 81`.
 
