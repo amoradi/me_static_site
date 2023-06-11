@@ -1,11 +1,11 @@
 +++
 
-title = "Good to Great: The Hedgehog Concept (Simplicity within the Three Circles)"
+title = "Good to Great, Ch. 5: The Hedgehog Concept (Simplicity within the Three Circles)"
 template = "notes.html"
 description = "The Hedgehog Concept (Simplicity within the Three Circles)"
 
 +++
-<h2 class="subtitle">Chapter 5 in <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6/" target="_blank">Good to Great</a></h2>
+
  
 > To go from good to great requires a deep understanding of three intersecting circles translated into a simple, crystalline concept (the Hedgehog Concept).
 > - What are you **deeply passionate about?**
@@ -33,4 +33,5 @@ description = "The Hedgehog Concept (Simplicity within the Three Circles)"
 > You absolutely **do not need to be in a great industry** to produce sustained great results. No matter how bad the industry, every good-to-great company figured out how to produce truly superior econmic returns.
 
 
-
+### Citation 
+Chapter 5 in <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6/" target="_blank">Good to Great</a>

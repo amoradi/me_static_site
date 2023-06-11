@@ -1,11 +1,10 @@
 +++
 
-title = "Good to Great: Confront The Brutal Facts Yet Never Lose Faith"
+title = "Good to Great, Ch. 4: Confront The Brutal Facts Yet Never Lose Faith"
 template = "notes.html"
 description = "Confront The Brutal Facts Yet Never Lose Faith"
 
 +++
-<h2 class="subtitle">Chapter 4 in <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6/" target="_blank">Good to Great</a></h2>
  
 > All good-to-great companies began the process of finding a path to greatness by **confronting the brutal facts of their current reality.**
 
@@ -26,3 +25,7 @@ description = "Confront The Brutal Facts Yet Never Lose Faith"
 > Leadership does not begin just with vision. It begins with getting people to confront the brutal facts and to act on the implications.
 
 > Spending time and energy trying to "motivate" people is a waste of effort. The real question is not, "How do we motivate our people?". If you have the right people, they will be self-motivated. **The key is to not de-motivate them.** One of the primary ways to de-motivate people is to ignore the brutal facts of reality.
+
+
+### Citation 
+Chapter 4 in <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6/" target="_blank">Good to Great</a>
