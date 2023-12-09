@@ -94,7 +94,7 @@ std::cout << "C++ is fun" << std::endl;
 
 ```c++
 int x;
-std::cin >> x;  //  get user input and store it in variable x
+std::cin >> x;  // get user input and store it in variable x
 ```
 
 ## Program Structure
@@ -128,3 +128,59 @@ int main() {
 ```
 
 This is the beginning of the main function. Every C++ program must have a main function in order to run.
+
+
+## Memory Addresss
+
+The **ampersand symbol `&`** is called the **address of operator** and is used to access the memory address of a variable. This can be done by preceding the name of a variable with &:
+
+```c++
+std::string message = "Hello World!";
+
+std::cout << message << std::endl;
+
+// Print the memory address of message (0x7ffee9b21af0)
+std::cout << &message << std::endl;
+```
+
+Since memory addresses are essentially randomized, don’t expect to get the exact same result in your program.
+
+## Pointers
+
+A pointer in C++ is a **variable that stores a memory address as its value**.
+
+```c++
+int* age;
+char* initial;
+```
+
+A pointer variable is **usually assigned with** a memory address obtained by the **address of operator `&`**.
+
+```c++
+string day = "Monday";
+
+string* ptr = &day
+```
+
+## Dereference
+
+When not used in a declaration, the **asterisk symbol `*` is called the dereference operator** and is used to **obtain the value pointed to** by a pointer variable.
+
+```c++
+// Reference: print the memory address of day (0x7ffd1d8306c4)
+std::cout << ptr << std::endl;
+
+// Dereference: print the value of day (Monday)
+std::cout << *ptr << std::endl;
+```
+
+## Null Pointer
+
+It is dangerous to leave a pointer variable uninitialized. If you are unsure where to point, assign that variable to **`nullptr`**, which is a keyword that **provides a typesafe pointer value representing an empty pointer**. 
+
+In older C/C++ code, `NULL` was used for this purpose. `nullptr` is meant as a modern replacement to `NULL`.
+
+```c++
+int* ptr = nullptr;
+```
+
