@@ -7,6 +7,21 @@ draft = false
 
 +++
 
+- Developed by Bjarne Stroustrup at Bell Labs in 1979.
+- Adds object-oriented programming and many other new features to C.
+- Fast, flexible, and well-supported across multiple platforms.
+- Being one of the most popular languages today, C++ has a wide range of applications across many fields.
+
+C++ a compiled language, which means a compiler needs to first translate your C++ source code into machine code before it can be run.
+
+```bash
+# compile
+g++ hello.cpp -o hello
+
+# execute
+./hello
+```
+
 ## Data Types
 
 
@@ -38,12 +53,12 @@ int b = (int) a; // convert a double to an int
 ## Bitwise Operators
 
 ```c++
-int x = 3;  // in bits: 0011
-int y = 9;  // in bits: 1001
+int x = 3;  // in binary: 0011
+int y = 9;  // in binary: 1001
 
-int z = x << 2; // z equals 12, in bits: 1100
-z = y >> 1; // z equals 4, in bits: 0100
-z = x | y;  // z equals 11, in bits: 1011
+int z = x << 2; // z equals 12, in binary: 1100
+z = y >> 1; // z equals 4, in binary: 0100
+z = x | y;  // z equals 11, in binary: 1011
 ```
 
 When a variable is declared, a free memory address is set aside for the purpose of storing the value inside that variable. C++ provides two powerful features that allow programmers to directly manipulate memory:
@@ -57,7 +72,7 @@ A **reference variable is an alias** to an existing variable. It is declared by 
 
 ```c++
 int exam_grade = 85;
-int& score = exam_grade; // a reference
+int &score = exam_grade; // a reference
 ```
 
 When the value of `score` is changed, the value of `exam_grade` will also change in the same way.
@@ -129,6 +144,11 @@ int main() {
 
 This is the beginning of the main function. Every C++ program must have a main function in order to run.
 
+```c++
+return 0
+```
+
+At the end of the main(), indicates the program ran without issues.
 
 ## Memory Addresss
 
@@ -150,8 +170,8 @@ Since memory addresses are essentially randomized, don’t expect to get the exa
 A pointer in C++ is a **variable that stores a memory address as its value**.
 
 ```c++
-int* age;
-char* initial;
+int *age;
+char *initial;
 ```
 
 A pointer variable is **usually assigned with** a memory address obtained by the **address of operator `&`**.
@@ -181,6 +201,34 @@ It is dangerous to leave a pointer variable uninitialized. If you are unsure whe
 In older C/C++ code, `NULL` was used for this purpose. `nullptr` is meant as a modern replacement to `NULL`.
 
 ```c++
-int* ptr = nullptr;
+int *ptr = nullptr;
+```
+
+## Looping
+
+```c++
+// while loop
+int count = 0;
+while (count <= 10) {
+  std::cout << count;
+  count++;
+}
+
+// do-while loop
+int price = 300;
+do {
+  std::cout << "Too expensive!";
+} while (price > 500);
+
+// for loop
+for (int i = 0; i <= 10; i++) {
+  std::cout << i;
+}
+
+// for-each loop
+int fibonacci[5] = { 0, 1, 1, 2, 3 };
+for (auto number:fibonacci){
+  std::cout << number;
+}
 ```
 

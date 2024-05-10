@@ -27,8 +27,8 @@ Fundamental analysis for a cryptoasset performed via examining its:
 - [White paper](#white-paper)
 - [Decentralization edge](#decentralization-edge)
 - [Valuation](#valuation)
-- ~~[Community and developers](#community-and-developers)~~
-- ~~[Issuance model](#issuance-model)~~
+- ~~Community and developers~~
+- ~~Issuance model~~
 
 ## White Paper
 "Vagueness is not your friend". If a white paper lacks specificity...avoid the asset.

@@ -1,18 +1,15 @@
-## Pages
-
-- /notes page. (search and list notes)
-- individual notes pages
-- home page as all encompassing, hello/soft resume/intro page
-- orphan pages:
-  - connect page (dlink?)(list my links)(dead page)(used when other sites call for it or for when very very brief intro is needed)
-  - real resume, pdf?
-
 ## Local Dev
-https://www.getzola.org/documentation/getting-started/cli-usage/
+
+Built with [Zola.](https://www.getzola.org/)
+
 ```bash
+# Install zola
+$ brew install zola
+
 # Build
 $ zola build
-# Build and serve sitee locally.
+
+# Build and serve site locally
 $ zola serve
 ```
 
