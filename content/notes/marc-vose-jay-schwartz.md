@@ -26,6 +26,6 @@ These two men, <a href="https://www.linkedin.com/in/marcvose/" target="_blank">M
 Sincerely,
 Aaron Moradi
 
-PS If you'd like more clarity or details, I'd be happy to provide. It's possible even <a href="https://www.linkedin.com/in/artursapek/" target="_blank">Artur Sapek</a> could provide additional perspective on it. Thanks!
+PS If you'd like more clarity or details, I'd be happy to provide. It's possible even <a href="https://www.linkedin.com/in/artursapek/" target="_blank">Artur Sapek</a> could provide additional perspective on it. Thanks.
 
 Ephesians 4:28 Let him that stole steal no more
