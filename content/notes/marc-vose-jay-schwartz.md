@@ -1,6 +1,6 @@
 +++
 
-title = "A Warning Against <a href="https://www.linkedin.com/in/marcvose/" target="_blank">Marc Vose</a> & <a href="https://www.linkedin.com/in/jay-schwartz/" target="_blank">Jay Schwartz</a>"
+title = "A Warning Against Marc Vose & Jay Schwartz"
 template = "notes.html"
 description = ""
 draft = false
