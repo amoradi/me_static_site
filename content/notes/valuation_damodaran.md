@@ -10,8 +10,6 @@ draft = false
 
 ## 3 Approaches to Valuation
 
-From https://pages.stern.nyu.edu/~adamodar/New_Home_Page/webcastvalonline.htm.
-
 - Intrinsic Value
     - Cashflows, discount rate that prices in risk, growth, time horizon, etc.
     - Focus is just on the business. Valuation is on its intrinsic characteristics.
@@ -30,3 +28,4 @@ From https://pages.stern.nyu.edu/~adamodar/New_Home_Page/webcastvalonline.htm.
     - Pharmancuetical who's medicine is based on government/patent approval.
     - Oil and gas company where outcomes are based on whether or not oil is found in target area.
  
+Footnotes: [https://pages.stern.nyu.edu/~adamodar/New_Home_Page/webcastvalonline.htm](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/webcastvalonline.htm)
