@@ -86,4 +86,4 @@ Thirteen businesses. Zero intention to sell.
 
 ---
 
-*This is not financial advice. I hold positions in most of the securities mentioned. Do your own research.*
+*This is not financial advice. I hold positions in the securities mentioned. Do your own research.*
