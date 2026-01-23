@@ -3,7 +3,7 @@
 title = "A Warning Against Marc Vose & Jay Schwartz"
 template = "notes.html"
 description = ""
-draft = false
+draft = true
 
 +++
 
