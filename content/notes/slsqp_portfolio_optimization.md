@@ -58,6 +58,78 @@ def objective(weights):
 
 5. **No leverage** - If you want short selling, change bounds to `(-1, 1)` or similar.
 
+## Full Example: Optimizing an 8-Stock Portfolio
+
+```python
+import numpy as np
+import pandas as pd
+from scipy.optimize import minimize
+
+# 8 stocks: tech, finance, healthcare, energy, consumer
+symbols = ['AAPL', 'MSFT', 'JPM', 'GS', 'JNJ', 'PFE', 'XOM', 'KO']
+
+# Assume prices is a DataFrame of adjusted close prices (dates x symbols)
+# prices = get_data(symbols, date_range)
+
+def portfolio_sharpe(weights, prices):
+    """Calculate negative Sharpe ratio (for minimization)."""
+    # Normalize prices and compute portfolio value
+    normalized = prices / prices.iloc[0]
+    portfolio_value = (normalized * weights).sum(axis=1)
+
+    # Daily returns
+    daily_returns = portfolio_value.pct_change().dropna()
+
+    # Sharpe ratio (annualized)
+    mean_return = daily_returns.mean()
+    std_return = daily_returns.std()
+    sharpe = np.sqrt(252) * (mean_return / std_return)
+
+    return -sharpe  # negative for minimization
+
+# Number of assets
+n = len(symbols)
+
+# Initial guess: equal weights
+x0 = np.full(n, 1/n)  # [0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125]
+
+# Run optimization
+result = minimize(
+    fun=portfolio_sharpe,
+    x0=x0,
+    args=(prices,),
+    method='SLSQP',
+    bounds=[(0, 1)] * n,  # no short selling
+    constraints=[
+        {'type': 'eq', 'fun': lambda w: np.sum(w) - 1.0}  # fully invested
+    ],
+    options={'disp': True}
+)
+
+# Check success
+if result.success:
+    optimal_weights = result.x
+    print("Optimal allocation:")
+    for sym, weight in zip(symbols, optimal_weights):
+        if weight > 0.001:  # only show meaningful allocations
+            print(f"  {sym}: {weight:.1%}")
+else:
+    print(f"Optimization failed: {result.message}")
+```
+
+### Sample Output
+
+```
+Optimal allocation:
+  AAPL: 22.3%
+  MSFT: 18.7%
+  JNJ: 31.2%
+  XOM: 12.4%
+  KO: 15.4%
+```
+
+Note how the optimizer may zero out some stocks entirely (JPM, GS, PFE in this example) if they don't contribute favorably to the risk-adjusted return.
+
 ## Sources
 
 - [SciPy minimize docs](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html)
