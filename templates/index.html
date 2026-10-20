@@ -1,70 +1,62 @@
 {% extends "base.html" %}
+{% import "macros.html" as m %}
 {% block title %}Aaron Moradi{% endblock title %}
-{% block desc %}Software Engineer at financial technology company (confidential){% endblock desc %}
+{% block desc %}Aaron Moradi — software engineer. Founder of Left Hash; previously Kraken.{% endblock desc %}
 {% block head %}
   <link rel="stylesheet" href="/home.css" />
 {% endblock head %}
 
-{% block header_links %}
-  <a href="/notes" title="notes">notes</a>
-  <a href="/reading-list" title="reading list">reads</a>
-{% endblock header_links %}
+{# The homepage carries its own navigation in the columns, so the site header is dropped here. #}
+{% block site_header %}{% endblock site_header %}
 
 {% block content %}
 <main role="main" class="main home">
-  <header class="masthead">
-    <div>
-      <div class="header-content">
-        <p><span class="header-content-emphasis">Hello, I'm Aaron Moradi</span>, Software Engineer & Visual Designer.<br />I like to make things.</p>
-        <p>Currently, Founder of <a href="https://lefthash.com" target="_blank">Lefthash</a>. Previously, Member of Technical Staff at <a href="https://kraken.com" target="_blank">Kraken</a>.</p>
-      </div>
-      <div class="header-links">
-        <span><a href="mailto:moradi.aaron@proton.me" target="_blank" class="icon-mail">moradi.aaron</a></span>
-        <span><a href="https://twitter.com/hardbread_" target="_blank" class="icon-twitter">@hardbread_</a></span>
-        <span><a href="https://www.linkedin.com/in/aaron-moradi/" target="_blank" class="icon-linkedin">@aaron-moradi</a></span>
-        <span><a href="https://github.com/amoradi/" target="_blank" class="icon-github">@amoradi</a></span>
-      </div>
-    </div>
-    <!-- <div class="header-img-container">
-      <img class="header-img" src="https://raw.githubusercontent.com/amoradi/me/master/public/assets/images/me_and_fam.jpg" width="35%" />
-    </div> -->
+  <header class="home__masthead">
+    <h1 class="home__name">Aaron Moradi</h1>
+    <p class="home__tagline">I've spent a decade building for markets: charting, trading views, and data visualization. Now building Left Hash.</p>
+    <nav class="home__links">
+      <a href="https://github.com/amoradi/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://x.com/hardbread_" target="_blank" rel="noopener">X</a>
+      <a href="https://www.linkedin.com/in/aaron-moradi/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
   </header>
-  <section class="content">
-    <div class="column">
-      <h2>Currently</h2>
-      <div>
-        <p>Founder, <a href="https://lefthash.com/" target="_blank">Left Hash</a></p>
-      </div>
-      <h2>Past</h2>
-      <div>
-        <p>Senior Software Engineer, <a href="https://kraken.com/" target="_blank">Kraken</a></p>
-        <p>Front End Developer, <a href="https://podcasts.apple.com/us/podcast/the-entreleadership-podcast/id435836905" target="_blank">EntreLeadership</a></p>
-        <p>Web Developer, <a href="https://www.mrm.com/index.html" target="_blank">MRM</a></p>
-        <p>Web Designer, <a href="https://www.visualapp.com/" target="_blank">Visual App</a></p>
-        <p>Inbound Marketer, <a href="https://www.quad.com/" target="_blank">Ivie</a></p>
-      </div>
+
+  <section class="home__columns">
+    <div class="home__column">
+      <h2 class="home__column-title">Builder</h2>
+
+      {{ m::entry(name="Left Hash", url="https://lefthash.com", img="lefthash_img.png", dates="2025–", role="Founder", blurb="Sports odds and statistics platform.") }}
+      {{ m::entry(name="Kraken", url="https://kraken.com", img="kraken_img.png", dates="2018–2025", role="Senior Software Engineer", blurb="Charting library and trading views for the exchange. Straddled the portfolio and data visualization teams.") }}
+      {{ m::entry(name="EntreLeadership", url="https://www.entreleadership.com", img="entreleadership_img.jpeg", dates="2016–2018", role="Front End Developer", blurb="Launched the Weekly Report Tool.") }}
+      {{ m::entry(name="MRM//McCann", url="https://www.mrm.com", img="mrm_img.jpeg", dates="2015–2016", role="Web Developer", blurb="UI components for Chevy, Manchester United, Coke, and Abbott.") }}
+      {{ m::entry(name="Visual App", url="https://www.visualapp.com", img="visual_app_img.jpeg", dates="2012–2015", role="Web Designer", blurb="Full site makeovers and custom WordPress themes.") }}
+      {{ m::entry(name="Ivie", url="https://www.quad.com", img="ivie_img.jpeg", dates="2011–2012", role="Inbound Marketer", blurb="Organic SEO, collateral, and campaigns.") }}
+      {{ m::entry(name="UT Dallas", url="https://www.utdallas.edu", img="utd_img.jpeg", dates="2009", role="BA, Art & Humanities", blurb="Before that, architecture at Texas Tech.") }}
     </div>
-    <div class="column">
-      <h2>Reads</h2>
-      <div>
-        <p><a href="https://www.amazon.com/Cold-Start-Problem-Andrew-Chen-ebook/dp/B08HZ5XY7X/" target="_blank">The Cold Start Problem: How to Start and Scale Network Effects</a>, Andrew Chen</p>
-        <p><a target="_blank" href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6/">Good to Great: Why Some Companies Make the Leap...And Others Don't</a>, Jim Collins</p>
-        <p><a target="_blank" href="https://www.amazon.com/Naked-Statistics-Stripping-Dread-Data/dp/039334777X/">Naked Statistics</a>, Charles Wheelan</p>
-        <p><a href="https://mises.org/library/what-has-government-done-our-money" target="_blank">What Has Government Done to Our Money?</a>, Murray N. Rothbard</p>
-        <!-- <p><a href="/notes" >My notes</a></p> -->
-        <p><a href="reading-list">More...</a></p>
-      </div>
-    </div>
-    <div class="column">
-      <h2>Projects</h2>
-      <div>
-        <p><a href="https://www.npmjs.com/package/scintilla" target="_blank">Scintilla, React Sparklines</a></p>
-        <p><a href="https://www.npmjs.com/package/@amoradi/atlas" target="_blank">Atlas, WebGPU-Powered World Map</a></p>
-        <p><a href="https://github.com/amoradi/stockprep" target="_blank">Stockprep, Stock Data Prep Utils</a></p>
-        <p>Numfun: Mental Math Games</p>
-        <p>FS Champ DFS Lineup Optimizer</p>
-      </div>
+
+    <div class="home__column">
+      <h2 class="home__column-title">Notes</h2>
+
+      {# A handful of recent notes; the full list lives at /notes. #}
+      {{ m::note(path="notes/slsqp_portfolio_optimization.md", blurb="Sequential least squares for constrained portfolio weights.") }}
+      {{ m::note(path="notes/long_civilization_portfolio.md", blurb="A 2026 growth portfolio, two names per theme.") }}
+      {{ m::note(path="notes/quality_portfolio.md", blurb="Thirteen monopolies and compounders.") }}
+      {{ m::note(path="notes/the_elements_of_computing_systems.md", blurb="Chapter summaries, from NAND to Tetris.") }}
+      {{ m::note(path="notes/valuation_damodaran.md", blurb="From Damodaran's NYU valuation class.") }}
+      {{ m::note(path="notes/frontend-system-design.md", blurb="Rendering and delivery models.") }}
+
+      <p class="home__more">
+        <a href="/notes">All notes</a>
+        <a href="/reading-list">Reading list</a>
+      </p>
     </div>
   </section>
+
+  <footer class="home__footer">
+    <i>Food over flame burns, food over heat cooks<br />- Alfred the Great</i>
+  </footer>
 </main>
 {% endblock content %}
+
+{# The homepage renders its own footer inside the column width, so the site footer is dropped. #}
+{% block footer %}{% endblock footer %}

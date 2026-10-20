@@ -1,0 +1,23 @@
+{# One row in the Builder column: logo, name + dates, role, one-line blurb. #}
+{% macro entry(name, url, img, dates, role, blurb) %}
+<article class="entry">
+  <img class="entry__logo" src="/images/{{ img }}" alt="" width="40" height="40" loading="lazy" />
+  <div class="entry__body">
+    <div class="entry__head">
+      <a class="entry__name" href="{{ url }}" target="_blank" rel="noopener">{{ name }}</a>
+      <span class="entry__meta">{{ dates }}</span>
+    </div>
+    <div class="entry__role">{{ role }}</div>
+    <p class="entry__blurb">{{ blurb }}</p>
+  </div>
+</article>
+{% endmacro entry %}
+
+{# One row in the Notes column. `path` is content-relative, so a renamed note fails the build instead of 404ing. #}
+{% macro note(path, blurb) %}
+{% set n = get_page(path=path) %}
+<article class="note">
+  <a class="note__title" href="{{ n.path | safe }}">{{ n.title }}</a>
+  <p class="note__blurb">{{ blurb }}</p>
+</article>
+{% endmacro note %}
