@@ -3,9 +3,9 @@
 <div class="entry">
   <img class="entry__logo{% if contain %} entry__logo--contain{% endif %}" src="/images/{{ img }}" alt="{{ name }}" width="36" height="36" loading="lazy" />
   <div>
-    <div class="entry__head"><a href="{{ url }}" target="_blank" rel="noopener">{{ name }}</a> <span class="entry__meta">{{ dates }}</span></div>
+    <div class="entry__head"><a href="{{ url }}" target="_blank" rel="noopener">{{ name }}</a>{% if dates %} <span class="entry__meta">{{ dates }}</span>{% endif %}</div>
     <p class="entry__role">{{ role }}</p>
-    <p class="entry__blurb">{{ blurb }}</p>
+    {% if blurb %}<p class="entry__blurb">{{ blurb }}</p>{% endif %}
   </div>
 </div>
 {% endmacro entry %}
