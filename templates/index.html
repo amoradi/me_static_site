@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% import "macros.html" as m %}
 {% block title %}Aaron Moradi{% endblock title %}
-{% block desc %}Aaron Moradi — software engineer. Founder of Left Hash; previously Kraken.{% endblock desc %}
+{% block desc %}Aaron Moradi — full stack engineer at LuxAlgo, founder of Left Hash, previously Kraken.{% endblock desc %}
 {% block head %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <main role="main" class="main home">
   <header class="home__masthead">
     <h1 class="home__name">Aaron Moradi</h1>
-    <p class="home__tagline">I've spent a decade building for markets: charting, trading views, and data visualization. Now building Left Hash.</p>
+    <p class="home__tagline">I've spent a decade building for markets: charting, trading views, and data visualization. Now at LuxAlgo, and building Left Hash.</p>
     <nav class="home__links">
       <a href="https://github.com/amoradi/" target="_blank" rel="noopener">GitHub</a>
       <a href="https://x.com/hardbread_" target="_blank" rel="noopener">X</a>
@@ -27,6 +27,7 @@
     <section>
       <h2 class="home__column-title">Builder</h2>
       <div class="home__list home__list--builder">
+        {{ m::entry(name="LuxAlgo", url="https://www.luxalgo.com", img="luxalgo_img.png", dates="2026–", role="Full Stack Engineer", blurb="Vela: a charting platform with the largest indicator library in trading.") }}
         {{ m::entry(name="Left Hash", url="https://lefthash.com", img="lefthash_img.png", dates="2025–", role="Founder", blurb="Sports odds and statistics platform.") }}
         {{ m::entry(name="Kraken", url="https://kraken.com", img="kraken_img.png", dates="2018–2025", role="Senior Software Engineer", blurb="Charting library and trading views for the exchange. Straddled the portfolio and data visualization teams.") }}
         {{ m::entry(name="EntreLeadership", url="https://www.entreleadership.com", img="entreleadership_img.jpeg", dates="2016–2018", role="Front End Developer", blurb="Launched the Weekly Report Tool.") }}
