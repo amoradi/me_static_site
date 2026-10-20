@@ -3,6 +3,8 @@
 {% block title %}Aaron Moradi{% endblock title %}
 {% block desc %}Aaron Moradi — software engineer. Founder of Left Hash; previously Kraken.{% endblock desc %}
 {% block head %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/home.css" />
 {% endblock head %}
 
@@ -21,39 +23,40 @@
     </nav>
   </header>
 
-  <section class="home__columns">
-    <div class="home__column">
+  <div class="home__columns">
+    <section>
       <h2 class="home__column-title">Builder</h2>
+      <div class="home__list home__list--builder">
+        {{ m::entry(name="Left Hash", url="https://lefthash.com", img="lefthash_img.png", dates="2025–", role="Founder", blurb="Sports odds and statistics platform.") }}
+        {{ m::entry(name="Kraken", url="https://kraken.com", img="kraken_img.png", dates="2018–2025", role="Senior Software Engineer", blurb="Charting library and trading views for the exchange. Straddled the portfolio and data visualization teams.") }}
+        {{ m::entry(name="EntreLeadership", url="https://www.entreleadership.com", img="entreleadership_img.jpeg", dates="2016–2018", role="Front End Developer", blurb="Launched the Weekly Report Tool.") }}
+        {{ m::entry(name="MRM//McCann", url="https://www.mrm.com", img="mrm_img.jpeg", dates="2015–2016", role="Web Developer", blurb="UI components for Chevy, Manchester United, Coke, and Abbott.") }}
+        {{ m::entry(name="Visual App", url="https://www.visualapp.com", img="visual_app_img.jpeg", dates="2012–2015", role="Web Designer", blurb="Full site makeovers and custom WordPress themes.") }}
+        {{ m::entry(name="Ivie", url="https://www.quad.com", img="ivie_img.jpeg", dates="2011–2012", role="Inbound Marketer", blurb="Organic SEO, collateral, and campaigns.") }}
+        {{ m::entry(name="UT Dallas", url="https://www.utdallas.edu", img="utd_img.jpeg", dates="2009", role="BA, Art & Humanities", blurb="Before that, architecture at Texas Tech.", contain=true) }}
+      </div>
+    </section>
 
-      {{ m::entry(name="Left Hash", url="https://lefthash.com", img="lefthash_img.png", dates="2025–", role="Founder", blurb="Sports odds and statistics platform.") }}
-      {{ m::entry(name="Kraken", url="https://kraken.com", img="kraken_img.png", dates="2018–2025", role="Senior Software Engineer", blurb="Charting library and trading views for the exchange. Straddled the portfolio and data visualization teams.") }}
-      {{ m::entry(name="EntreLeadership", url="https://www.entreleadership.com", img="entreleadership_img.jpeg", dates="2016–2018", role="Front End Developer", blurb="Launched the Weekly Report Tool.") }}
-      {{ m::entry(name="MRM//McCann", url="https://www.mrm.com", img="mrm_img.jpeg", dates="2015–2016", role="Web Developer", blurb="UI components for Chevy, Manchester United, Coke, and Abbott.") }}
-      {{ m::entry(name="Visual App", url="https://www.visualapp.com", img="visual_app_img.jpeg", dates="2012–2015", role="Web Designer", blurb="Full site makeovers and custom WordPress themes.") }}
-      {{ m::entry(name="Ivie", url="https://www.quad.com", img="ivie_img.jpeg", dates="2011–2012", role="Inbound Marketer", blurb="Organic SEO, collateral, and campaigns.") }}
-      {{ m::entry(name="UT Dallas", url="https://www.utdallas.edu", img="utd_img.jpeg", dates="2009", role="BA, Art & Humanities", blurb="Before that, architecture at Texas Tech.") }}
-    </div>
-
-    <div class="home__column">
+    <section>
       <h2 class="home__column-title">Notes</h2>
-
-      {# A handful of recent notes; the full list lives at /notes. #}
-      {{ m::note(path="notes/slsqp_portfolio_optimization.md", blurb="Sequential least squares for constrained portfolio weights.") }}
-      {{ m::note(path="notes/long_civilization_portfolio.md", blurb="A 2026 growth portfolio, two names per theme.") }}
-      {{ m::note(path="notes/quality_portfolio.md", blurb="Thirteen monopolies and compounders.") }}
-      {{ m::note(path="notes/the_elements_of_computing_systems.md", blurb="Chapter summaries, from NAND to Tetris.") }}
-      {{ m::note(path="notes/valuation_damodaran.md", blurb="From Damodaran's NYU valuation class.") }}
-      {{ m::note(path="notes/frontend-system-design.md", blurb="Rendering and delivery models.") }}
-
-      <p class="home__more">
-        <a href="/notes">All notes</a>
-        <a href="/reading-list">Reading list</a>
-      </p>
-    </div>
-  </section>
+      <div class="home__list home__list--notes">
+        {# A handful of recent notes; the full list lives at /notes. #}
+        {{ m::note(path="notes/slsqp_portfolio_optimization.md", blurb="Sequential least squares for constrained portfolio weights.") }}
+        {{ m::note(path="notes/long_civilization_portfolio.md", blurb="A 2026 growth portfolio, two names per theme.") }}
+        {{ m::note(path="notes/quality_portfolio.md", blurb="Thirteen monopolies and compounders.") }}
+        {{ m::note(path="notes/the_elements_of_computing_systems.md", blurb="Chapter summaries, from NAND to Tetris.") }}
+        {{ m::note(path="notes/valuation_damodaran.md", blurb="From Damodaran's NYU valuation class.") }}
+        {{ m::note(path="notes/frontend-system-design.md", blurb="Rendering and delivery models.") }}
+        <div>
+          <p class="note__title"><a href="/notes">All notes</a></p>
+          <p class="note__blurb">Plus a <a href="/reading-list">reading list</a>.</p>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <footer class="home__footer">
-    Based in Michigan &amp; Texas
+    <p>Based in Michigan &amp; Texas</p>
   </footer>
 </main>
 {% endblock content %}

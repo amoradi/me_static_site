@@ -1,173 +1,226 @@
-/* homepage CSS */
-.home {
-    --home-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
-    --home-serif: Georgia, "Times New Roman", Times, serif;
+/* Homepage. Values mirror a Tailwind build: Inter / Newsreader, the stone
+   palette, 672px container. This stylesheet loads on the homepage only, so
+   the overrides of the site shell below do not leak to other pages. */
 
-    max-width: 720px;
-    margin: 0 auto;
-    padding-top: 24px;
-    font-family: var(--home-sans);
+:root {
+    --stone-100: #f5f5f4;
+    --stone-200: #e7e5e4;
+    --stone-400: #a8a29e;
+    --stone-500: #78716c;
+    --stone-900: #1c1917;
+    --gray-900: #111827;
+
+    background-color: #fff;
+    border-top: 0;
+}
+
+/* The homepage is light only; the site-wide dark-mode toggle is hidden here. */
+#color-mode-switch-container {
+    display: none;
+}
+
+body.all {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    color: var(--gray-900);
+    background: #fff;
 }
 
-@media only screen and (min-width: 760px) {
+.important-content {
+    min-height: 0;
+}
+
+.home {
+    max-width: 672px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+@media (min-width: 768px) {
     .home {
-        padding-top: 64px;
+        padding: 112px 24px;
     }
+}
+
+.home a {
+    color: inherit;
+    border-bottom: 0;
+    text-decoration: none;
+}
+
+.home p {
+    margin: 0;
 }
 
 /* ---- masthead ---- */
 
+.home__masthead {
+    margin-bottom: 64px;
+}
+
 .home__name {
-    margin: 0;
-    font-family: var(--home-serif);
+    margin: 0 0 16px;
+    font-family: 'Newsreader', Georgia, serif;
     font-weight: 400;
-    font-size: 34px;
-    letter-spacing: -0.01em;
-    line-height: 1.2;
-    color: var(--dark);
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: var(--gray-900);
+}
+
+@media (min-width: 768px) {
+    .home__name {
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 
 .home__tagline {
-    margin: 18px 0 0;
-    max-width: 60ch;
-    font-size: 18px;
-    color: var(--med-light);
+    color: var(--stone-500);
 }
 
 .home__links {
+    display: flex;
+    gap: 16px;
     margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
-.home__links a,
-.home__more a {
-    margin-right: 18px;
-    color: var(--med-light);
-    border-bottom: 1px solid var(--light);
+.home__links a {
+    color: var(--stone-500);
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
-.home__links a:hover,
-.home__more a:hover {
-    border-bottom-color: var(--dark);
+.home__links a:hover {
+    color: var(--stone-900);
 }
 
 /* ---- columns ---- */
 
 .home__columns {
-    margin-top: 72px;
+    display: grid;
+    gap: 48px;
 }
 
-@media only screen and (min-width: 700px) {
+@media (min-width: 768px) {
     .home__columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 56px;
-    }
-}
-
-.home__column + .home__column {
-    margin-top: 56px;
-}
-
-@media only screen and (min-width: 700px) {
-    .home__column + .home__column {
-        margin-top: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 64px;
     }
 }
 
 .home__column-title {
     margin: 0 0 24px;
     font-size: 12px;
+    line-height: 16px;
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: var(--light);
+    color: var(--stone-400);
+}
+
+.home__list--builder > * + * {
+    margin-top: 20px;
+}
+
+.home__list--notes > * + * {
+    margin-top: 16px;
 }
 
 /* ---- builder entries ---- */
 
 .entry {
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    column-gap: 14px;
-    margin-bottom: 26px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .entry__logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 9px;
+    flex: none;
+    box-sizing: border-box;
+    width: 36px;
+    height: 36px;
+    margin-top: 2px;
+    border-radius: 8px;
     object-fit: cover;
-    background: var(--light-ultra);
+}
+
+.entry__logo--contain {
+    object-fit: contain;
+    background: var(--stone-100);
+    padding: 4px;
 }
 
 .entry__head {
-    line-height: 1.35;
-}
-
-.entry__name {
-    font-size: 17px;
     font-weight: 500;
-    color: var(--dark);
-    border-bottom: 0;
+    line-height: 24px;
 }
 
-.entry__name:hover {
-    border-bottom: 1px solid var(--light);
+.entry__head a:hover {
+    text-decoration: underline;
 }
 
 .entry__meta {
-    margin-left: 6px;
-    font-size: 14px;
-    color: var(--light);
+    margin-left: 4px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--stone-400);
 }
 
 .entry__role {
-    color: var(--med-light);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--stone-500);
 }
 
 .entry__blurb {
-    margin: 2px 0 0;
-    font-size: 14px;
-    line-height: 1.45;
-    color: var(--light);
+    margin-top: 4px !important;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--stone-400);
 }
 
 /* ---- notes ---- */
 
-.note {
-    margin-bottom: 20px;
-}
-
 .note__title {
-    color: var(--dark);
-    border-bottom: 1px solid var(--light-extra);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--stone-500);
 }
 
-.note__title:hover {
-    border-bottom-color: var(--dark);
+.note__title a {
+    font-weight: 500;
+    color: var(--stone-900);
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .note__blurb {
-    margin: 4px 0 0;
-    font-size: 14px;
-    line-height: 1.45;
-    color: var(--light);
+    margin-top: 4px !important;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--stone-400);
 }
 
-.home__more {
-    margin-top: 32px;
+.note__blurb a:hover {
+    text-decoration: underline;
 }
 
 /* ---- footer ---- */
 
 .home__footer {
-    margin-top: 72px;
-    padding-top: 28px;
-    border-top: 1px solid var(--light-extra);
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--stone-200);
     font-size: 14px;
-    line-height: 1.5;
-    color: var(--light);
+    line-height: 20px;
+    color: var(--stone-400);
 }
