@@ -52,7 +52,7 @@
 
 .resume-header .small-text {
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .split-view {
@@ -117,7 +117,7 @@ li,
 }
 
 .resume-header__title--slim {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .resume-header__list {

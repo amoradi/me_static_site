@@ -16,7 +16,7 @@
 
 .reading-text .back-link {
     font-size: var(--text-meta-size);
-    font-weight: 300;
+    font-weight: 400;
     color: var(--light);
 }
 
@@ -127,9 +127,9 @@
     height: 27px;
     background-color: var(--background);
     border-radius: 0;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: var(--text-major-size);
-    font-weight: 300;
+    font-weight: 400;
     border: 0;
     border-bottom: 1px solid var(--light-extra);
     color: var(--med-light);

@@ -13,8 +13,8 @@
 
     --heading-major-size: 24px;
     --heading-size: 14px;
-    --text-major-size: 18px;
-    --text-size: 18px;
+    --text-major-size: 17px;
+    --text-size: 16px;
     --text-med-size: 16px;
     --text-med-meta-size: 15px;
     --text-meta-size: 14px;
@@ -76,13 +76,13 @@ a:hover {
 }
 
 .all {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: var(--text-size);
-    font-weight: 300;
+    font-weight: 400;
     max-width: 1200px;
     margin: 0 auto;
     padding: 24px 6.4% 80px;
-    line-height: 1.7;
+    line-height: 1.6;
     color: var(--med-light);
 }
 
