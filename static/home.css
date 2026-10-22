@@ -229,8 +229,3 @@ body.all {
     border-radius: 50%;
     object-fit: cover;
 }
-
-.home .home__footer-name {
-    font-weight: 500;
-    color: var(--gray-900);
-}
