@@ -1,20 +1,28 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title | safe }} | Aaron Moradi{% endblock title %}
+{% import "macros.html" as m %}
+{% block title %}{{ page.title | safe }}{% endblock title %}
 {% block desc %}{{ page.description | safe }}{% endblock desc %}
 {% block head %}
+  <link rel="stylesheet" href="/home.css" />
   <link rel="stylesheet" href="/notes.css" />
 {% endblock head %}
 
-{% block header_links %}
-    <a href="/notes" title="notes">notes</a>
-    <a href="/reading-list" title="reads">reads</a>
-{% endblock header_links %}
-    
+{% block site_header %}{% endblock site_header %}
+
 {% block content %}
-    <div class="reading-text">
-        <a class="back-link"href="/notes"/>&#8592; back</a>
-        <h1 class="title">{{ page.title | safe }}</h1>
-        
-        {{ page.content | safe }}
-    </div>
+<main role="main" class="main home">
+  {{ m::masthead(home=true) }}
+
+  <article class="reading-text">
+    {# Goes back to wherever the reader came from; falls back to the notes list for a direct visit. #}
+    <a class="back-link" href="/notes" onclick="if (history.length > 1) { history.back(); return false; }">&#8592; back</a>
+    <h1 class="title">{{ page.title | safe }}</h1>
+
+    {{ page.content | safe }}
+  </article>
+
+  {{ m::footer() }}
+</main>
 {% endblock content %}
+
+{% block footer %}{% endblock footer %}

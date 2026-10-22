@@ -176,3 +176,37 @@
     margin-top: -40px;
     margin-bottom: 40px;
 }
+/* A note inside the homepage shell: undo the shell's resets for article text. */
+.home .reading-text {
+    max-width: none;
+    margin: 0;
+}
+
+.home .reading-text p {
+    margin: 0 0 1em;
+}
+
+.home .reading-text a {
+    color: var(--dark);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.home .reading-text .back-link {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--light);
+    text-decoration: none;
+}
+
+.home .reading-text .back-link:hover {
+    text-decoration: underline;
+}
+
+.home .reading-text h1.title {
+    margin: 0 0 32px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
