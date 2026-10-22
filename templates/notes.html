@@ -11,11 +11,13 @@
 
 {% block content %}
 <main role="main" class="main home">
-  {{ m::masthead(home=true) }}
-
   <article class="reading-text">
-    {# Goes back to wherever the reader came from; falls back to the notes list for a direct visit. #}
-    <a class="back-link" href="/notes" onclick="if (history.length > 1) { history.back(); return false; }">&#8592; back</a>
+    <nav class="note-nav">
+      {# Goes back to wherever the reader came from; falls back to the notes list for a direct visit. #}
+      <a class="back-link" href="/notes" onclick="if (history.length > 1) { history.back(); return false; }">&#8592; back</a>
+      <a class="back-link" href="/">home</a>
+      <a class="back-link" href="/notes">notes</a>
+    </nav>
     <h1 class="title">{{ page.title | safe }}</h1>
 
     {{ page.content | safe }}
