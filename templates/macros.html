@@ -24,7 +24,10 @@
 {% macro masthead(home=false) %}
 <header class="masthead">
   {% if home %}
-  <h1 class="masthead__name"><a href="/">Aaron Moradi</a></h1>
+  <div class="masthead__row">
+    <img class="masthead__face" src="/images/aaron.jpg" alt="" width="56" height="56" />
+    <h1 class="masthead__name"><a href="/">Aaron Moradi</a></h1>
+  </div>
   <p class="masthead__tagline">I've spent a decade building at the intersection of trading, finance and crypto.</p>
   {% else %}
   <p class="masthead__name"><a href="/">Aaron Moradi</a></p>
@@ -40,7 +43,6 @@
 {# Page footer for the homepage-style pages: headshot, name, location. #}
 {% macro footer() %}
 <footer class="home__footer">
-  <img class="home__face" src="/images/aaron.jpg" alt="Aaron Moradi" width="56" height="56" loading="lazy" />
   <p>Based in Michigan &middot; UTC&minus;5</p>
 </footer>
 {% endmacro footer %}

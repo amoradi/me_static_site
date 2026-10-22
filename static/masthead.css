@@ -7,6 +7,20 @@
     line-height: 1.5;
 }
 
+.masthead__row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.masthead__face {
+    flex: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .masthead__name {
     margin: 0;
     font-family: 'Newsreader', Georgia, serif;
