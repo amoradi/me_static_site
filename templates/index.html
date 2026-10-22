@@ -49,18 +49,21 @@
     </div>
 
     <section>
-      <h2 class="home__column-title">Notes</h2>
+      <h2 class="home__column-title">Writing</h2>
+      <p class="home__sublabel">Strong beliefs loosely held</p>
       <div class="home__list home__list--notes">
-        {# A handful of recent notes; the full list lives at /notes. #}
-        {{ m::note(path="notes/slsqp_portfolio_optimization.md", blurb="Sequential least squares for constrained portfolio weights.") }}
-        {{ m::note(path="notes/long_civilization_portfolio.md", blurb="A 2026 growth portfolio, two names per theme.") }}
-        {{ m::note(path="notes/quality_portfolio.md", blurb="Thirteen monopolies and compounders.") }}
-        {{ m::note(path="notes/the_elements_of_computing_systems.md", blurb="Chapter summaries, from NAND to Tetris.") }}
-        {{ m::note(path="notes/valuation_damodaran.md", blurb="From Damodaran's NYU valuation class.") }}
-        {{ m::note(path="notes/frontend-system-design.md", blurb="Rendering and delivery models.") }}
+        {% set b1 = get_page(path="notes/good_to_great_confront_the_brutal_facts_yet_never_lose_faith.md") %}
         <div>
-          <p class="note__title"><a href="/notes">All notes</a></p>
-          <p class="note__blurb">Plus a <a href="/reading-list">reading list</a>.</p>
+          <p class="note__title">Confront the brutal facts of your reality.</p>
+          <p class="note__blurb"><a href="{{ b1.path | safe }}">Good to Great, Ch. 4 &#x2197;&#xFE0E;</a></p>
+        </div>
+        {% set b2 = get_page(path="notes/the_investor_and_market_fluctuations.md") %}
+        <div>
+          <p class="note__title">The market is there to serve you, not instruct you.</p>
+          <p class="note__blurb"><a href="{{ b2.path | safe }}">The Intelligent Investor, Ch. 8 &#x2197;&#xFE0E;</a></p>
+        </div>
+        <div>
+          <p class="note__blurb">Also: a <a href="/reading-list">reading list</a>.</p>
         </div>
       </div>
     </section>

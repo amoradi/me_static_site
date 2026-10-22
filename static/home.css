@@ -96,6 +96,14 @@ body.all {
     color: var(--stone-400);
 }
 
+.home__sublabel {
+    margin: 0 0 16px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--stone-900);
+}
+
 .home__list--builder > * + * {
     margin-top: 20px;
 }
