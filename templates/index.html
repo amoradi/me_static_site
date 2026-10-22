@@ -50,17 +50,16 @@
 
     <section>
       <h2 class="home__column-title">Writing</h2>
-      <p class="home__sublabel">Strong beliefs loosely held</p>
       <div class="home__list home__list--notes">
         {% set b1 = get_page(path="notes/good_to_great_confront_the_brutal_facts_yet_never_lose_faith.md") %}
         <div>
-          <p class="note__title">Confront the brutal facts of your reality.</p>
-          <p class="note__blurb"><a href="{{ b1.path | safe }}">Good to Great, Ch. 4 &#x2197;&#xFE0E;</a></p>
+          <p class="note__title"><a href="{{ b1.path | safe }}">Confront the brutal facts of your reality.</a></p>
+          <p class="note__blurb">Good to Great, Ch. 4.</p>
         </div>
         {% set b2 = get_page(path="notes/the_investor_and_market_fluctuations.md") %}
         <div>
-          <p class="note__title">The market is there to serve you, not instruct you.</p>
-          <p class="note__blurb"><a href="{{ b2.path | safe }}">The Intelligent Investor, Ch. 8 &#x2197;&#xFE0E;</a></p>
+          <p class="note__title"><a href="{{ b2.path | safe }}">The market is there to serve you, not instruct you.</a></p>
+          <p class="note__blurb">The Intelligent Investor, Ch. 8.</p>
         </div>
         <div>
           <p class="note__blurb">Also: a <a href="/reading-list">reading list</a>.</p>
