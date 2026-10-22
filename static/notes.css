@@ -194,10 +194,15 @@
     text-underline-offset: 2px;
 }
 
+/* The nav row sits near the top of the page, with room before the title. */
+.home--note {
+    padding-top: 32px;
+}
+
 .home .reading-text .note-nav {
     display: flex;
     gap: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 48px;
 }
 
 /* Same treatment as the masthead links. */
