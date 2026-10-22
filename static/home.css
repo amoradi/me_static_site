@@ -216,10 +216,3 @@ body.all {
 }
 
 
-.home__face {
-    flex: none;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    object-fit: cover;
-}
