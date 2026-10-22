@@ -18,3 +18,21 @@
   <p class="note__blurb">{{ blurb }}</p>
 </div>
 {% endmacro note %}
+
+{# Site masthead: name (links home) and the social links. The homepage passes
+   home=true to render the name as the page heading and add the intro line. #}
+{% macro masthead(home=false) %}
+<header class="masthead">
+  {% if home %}
+  <h1 class="masthead__name">Aaron Moradi</h1>
+  <p class="masthead__tagline">I've spent a decade building at the intersection of trading, finance and crypto.</p>
+  {% else %}
+  <p class="masthead__name"><a href="/">Aaron Moradi</a></p>
+  {% endif %}
+  <nav class="masthead__links">
+    <a href="https://github.com/amoradi/" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://x.com/hardbread_" target="_blank" rel="noopener">X</a>
+    <a href="https://www.linkedin.com/in/aaron-moradi/" target="_blank" rel="noopener">LinkedIn</a>
+  </nav>
+</header>
+{% endmacro masthead %}
