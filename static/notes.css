@@ -200,15 +200,18 @@
     margin-bottom: 8px;
 }
 
+/* Same treatment as the masthead links. */
 .home .reading-text .back-link {
     display: inline-block;
     font-size: 14px;
-    color: var(--light);
-    text-decoration: none;
+    line-height: 20px;
+    color: var(--stone-500);
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .home .reading-text .back-link:hover {
-    text-decoration: underline;
+    color: var(--stone-900);
 }
 
 .home .reading-text h1.title {
