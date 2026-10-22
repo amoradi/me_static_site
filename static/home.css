@@ -46,8 +46,7 @@ body.all {
 .home {
     max-width: 672px;
     margin: 0 auto;
-    /* Same top offset on every page, so the masthead and the note nav line up when clicking around. */
-    padding: 20px 24px 80px;
+    padding: 64px 24px 80px;
 }
 
 .home a {
