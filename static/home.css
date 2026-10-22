@@ -104,6 +104,26 @@ body.all {
     margin-top: 16px;
 }
 
+/* Long lists (notes, reading list) flow into two columns on wider screens. */
+@media (min-width: 768px) {
+    .home__list--columns {
+        column-count: 2;
+        column-gap: 64px;
+    }
+
+    .home__list--columns > * {
+        break-inside: avoid;
+    }
+
+    .home__list--columns > * + * {
+        margin-top: 0;
+    }
+
+    .home__list--columns > * {
+        padding-bottom: 16px;
+    }
+}
+
 /* ---- builder entries ---- */
 
 .entry {

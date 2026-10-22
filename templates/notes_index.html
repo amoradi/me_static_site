@@ -1,41 +1,33 @@
 {% extends "base.html" %}
-{% block title %}notes | Aaron Moradi{% endblock title %}
+{% import "macros.html" as m %}
+{% block title %}Notes{% endblock title %}
 {% block desc %}Notes by Aaron Moradi{% endblock desc %}
 {% block head %}
-<link rel="stylesheet" href="/notes.css" />
-<script type="text/javascript" src="/elasticlunr.min.js"></script>
-<script type="text/javascript" src="/search_index.en.js"></script>
-<script type="text/javascript" src="/search.js"></script>
+  <link rel="stylesheet" href="/home.css" />
 {% endblock head %}
 
-{% block header_body %}
-<input type="text" id="search" placeholder="search..."/>
-{% endblock header_body %}
-
-{% block header_links %}
-  <a href="/notes" title="notes">notes</a>
-  <a href="/reading-list" title="reads">reads</a>
-{% endblock header_links %}
+{% block site_header %}{% endblock site_header %}
 
 {% block content %}
-<div class="search-results">
+<main role="main" class="main home">
+  {{ m::masthead(home=true) }}
 
-</div>
-<div class="search-results__items notes-list">
+  <section>
+    <h2 class="home__column-title">Notes</h2>
+    <div class="home__list home__list--notes home__list--columns">
+      {% for page in paginator.pages %}
+      <div>
+        <p class="note__title"><a href="{{ page.path | safe }}">{{ page.title }}</a></p>
+        <p class="note__blurb">{{ page.reading_time }} min read</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 
-</div>
-
-  {{ section.content | safe }}
-  <ul class="notes-list notes-list-proper">
-    {% for page in paginator.pages %}
-    <li><a class="notes-teaser-link border-0" href="{{ page.path | safe }}"><span class="notes-teaser-title">{{ page.title }}</span><p class="notes-teaser-reading-time">{{ page.reading_time }} min read</p></a></li>
-    {% endfor %}
-  </ul>
-
-{% if paginator.previous %}
-    <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
-{% endif %}
-{% if paginator.next %}
-    <a class="next" href="{{ paginator.next }}">Next ›</a>
-{% endif %}
+  <footer class="home__footer">
+    <p>Based in Michigan &middot; UTC&minus;5</p>
+  </footer>
+</main>
 {% endblock content %}
+
+{% block footer %}{% endblock footer %}
