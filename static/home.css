@@ -14,6 +14,9 @@
     --dark: var(--gray-900);
     --med-light: var(--stone-500);
     --light: var(--stone-400);
+    --light-extra: var(--stone-200);
+    --light-ultra: var(--stone-100);
+    --strong: var(--stone-900);
 
     background-color: #fff;
     border-top: 0;
