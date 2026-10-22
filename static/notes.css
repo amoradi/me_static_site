@@ -180,6 +180,8 @@
 .home .reading-text {
     max-width: none;
     margin: 0;
+    /* Article copy reads in the homepage's body gray; headings and links stay dark. */
+    color: var(--stone-500);
 }
 
 .home .reading-text p {
