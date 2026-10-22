@@ -1,4 +1,5 @@
 +++
+aliases = ["/notes/zero-to-one.html"]
 
 title = "Zero to One, Notes on Startups"
 template = "notes.html"

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+{% block title %}Contact{% endblock title %}
+{% block desc %}How to reach Aaron Moradi{% endblock desc %}
+{% block head %}
+  <link rel="stylesheet" href="/home.css" />
+{% endblock head %}
+
+{% block site_header %}{% endblock site_header %}
+
+{% block content %}
+<main role="main" class="main home">
+  {{ m::masthead(home=true) }}
+
+  <section>
+    <h2 class="home__column-title">Contact</h2>
+    <div class="home__list home__list--notes">
+      <div>
+        <p class="note__title">Get in touch.</p>
+        <p class="note__blurb">Building something at the intersection of markets, software, and capital, or just want to talk shop? Email is the surest way to reach me. I read everything; I reply to what I can.</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="mailto:moradi.aaron@gmail.com">moradi.aaron@gmail.com</a></p>
+        <p class="note__blurb">Email</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://x.com/hardbread_" target="_blank" rel="noopener">@hardbread_</a></p>
+        <p class="note__blurb">X</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.linkedin.com/in/aaron-moradi/" target="_blank" rel="noopener">@aaron-moradi</a></p>
+        <p class="note__blurb">LinkedIn</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://github.com/amoradi/" target="_blank" rel="noopener">@amoradi</a></p>
+        <p class="note__blurb">GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  {{ m::footer() }}
+</main>
+{% endblock content %}
+
+{% block footer %}{% endblock footer %}

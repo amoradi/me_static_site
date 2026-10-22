@@ -1,4 +1,5 @@
 +++
+aliases = ["/notes/the-investor-and-market-fluctuations.html"]
 
 title = "The Investor and Market Fluctuations"
 template = "notes.html"

@@ -1,4 +1,5 @@
 +++
+aliases = ["/notes/good-to-great-confront-the-brutal-facts.html"]
 
 title = "Good to Great, Ch. 4: Confront The Brutal Facts Yet Never Lose Faith"
 template = "notes.html"
