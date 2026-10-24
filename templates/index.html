@@ -29,6 +29,27 @@
           {{ m::entry(name="Ivie", url="https://www.quad.com", img="ivie_img.jpeg", dates="2011–2012", role="Inbound Marketer", blurb="Organic SEO, collateral, and campaigns.") }}
         </div>
       </section>
+    </div>
+
+    <div class="home__stack">
+      <section>
+        <h2 class="home__column-title">Notes</h2>
+        <div class="home__list home__list--notes">
+          {% set b1 = get_page(path="notes/good_to_great_confront_the_brutal_facts_yet_never_lose_faith.md") %}
+          <div>
+            <p class="note__title"><a href="{{ b1.path | safe }}">Confront the brutal facts of your reality.</a></p>
+            <p class="note__blurb">Good to Great, Ch. 4.</p>
+          </div>
+          {% set b2 = get_page(path="notes/the_investor_and_market_fluctuations.md") %}
+          <div>
+            <p class="note__title"><a href="{{ b2.path | safe }}">The market is there to serve you, not instruct you.</a></p>
+            <p class="note__blurb">The Intelligent Investor, Ch. 8.</p>
+          </div>
+          <div>
+            <p class="note__blurb">Also: <a href="/notes">more notes</a> and a <a href="/reading-list">reading list</a>.</p>
+          </div>
+        </div>
+      </section>
 
       <section>
         <h2 class="home__column-title">Education</h2>
@@ -47,25 +68,6 @@
         </div>
       </section>
     </div>
-
-    <section>
-      <h2 class="home__column-title">Writing</h2>
-      <div class="home__list home__list--notes">
-        {% set b1 = get_page(path="notes/good_to_great_confront_the_brutal_facts_yet_never_lose_faith.md") %}
-        <div>
-          <p class="note__title"><a href="{{ b1.path | safe }}">Confront the brutal facts of your reality.</a></p>
-          <p class="note__blurb">Good to Great, Ch. 4.</p>
-        </div>
-        {% set b2 = get_page(path="notes/the_investor_and_market_fluctuations.md") %}
-        <div>
-          <p class="note__title"><a href="{{ b2.path | safe }}">The market is there to serve you, not instruct you.</a></p>
-          <p class="note__blurb">The Intelligent Investor, Ch. 8.</p>
-        </div>
-        <div>
-          <p class="note__blurb">Also: <a href="/notes">notes</a> and a <a href="/reading-list">reading list</a>.</p>
-        </div>
-      </div>
-    </section>
   </div>
 
   {{ m::footer() }}
